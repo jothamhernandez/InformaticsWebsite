@@ -95,11 +95,85 @@
 			</div>
 		</div>
 	</div>
-
+<div class="scroll-up-button" style="background:rgba(150,150,150,.8); border-radius:100%; padding:2px;">
+	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
+</div>
 </footer>
 		<script>
 			(function(){
 				jQuery('#content').offset({top: jQuery("#masthead").height()});
+				var $ = jQuery;
+				$(document).ready(function() {
+					$(".scroll-up-button").click(function() {
+					  $("html, body").animate({ scrollTop: 0 },1500);
+					  return false;
+					});
+					$(window).scroll(function(e){
+						if($(window).scrollTop() > 10){
+						   $('.scroll-up-button').fadeIn();   
+						}else{
+							$('.scroll-up-button').fadeOut();
+						}
+					})
+					// var child = $('.dropdown');
+					// console.log(child.children()[0].href);
+					$('.btn-admission').click(function(){
+						$('.dd-admission').animate({height:'0px'})
+						var sibling = $(this).siblings()[1];
+						var height = $(sibling).css('height');
+						if(height != '2px'){
+							$(sibling).animate({height:'0px'})
+						}else{
+							$(sibling).animate({height:'530px'})
+						}
+					})
+					if ( $(window).width() > 768 ) {
+						$('.dropdown').click(function(){
+							document.location.href =$(this).children()[0].href;
+						})
+					} // This will simulate a resize to trigger the initial run.
+					$('[data-action=link]').on('click', function(){
+						window.location = $(this).data('link');
+					});
+					var dropsearch = false;
+					$('#search-icon-2,#search-icon-1').on('click',function(){
+						dropsearch = !dropsearch;
+						if(dropsearch){
+						   $('header form').animate({height:'38px'})
+						  }else{
+							$('header form').animate({height:'0px'})  
+						  }
+					});
+					window.sr = ScrollReveal();
+					sr.reveal('h1',{duration:2300});
+					sr.reveal('.reasons',{interval:300,delay:1000,duration:500})
+					sr.reveal('article',{interval:500,origin:'bottom',distance:'140px',duration:1200})
+					sr.reveal('.up-anim',{origin:'bottom',distance:'300px',duration:1800})
+					sr.reveal('#search-icon-wrap-2',
+					{
+						rotate:{
+							x:20,
+							y:20
+						},
+						origin:'right',
+						duration:1000,
+						distance:'140px'
+					})
+					sr.reveal('.programs-rotate',{
+						rotate:{
+							x:200,
+							z:10
+						},
+						duration:1200,
+						interval:200,
+						delay:800,
+						origin:'top'
+					})
+					sr.reveal('.even',{interval:1000,delay:1700,origin:'right',distance:'200px',duration:1000})
+					sr.reveal('.odd',{interval:1000,delay:1200,origin:'left',distance:'200px',duration:1000})
+					sr.reveal('.senior-img',{interval:1000,delay:700,origin:'left',distance:'100px',duration:1000});
+					sr.reveal('.senior-text',{interval:1000,delay:1200,origin:'right',distance:'100px',duration:1000});
+				});
 			})();
 		</script>
 	</div><!-- #content -->

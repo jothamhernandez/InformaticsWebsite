@@ -30,6 +30,208 @@ figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow t
 
 table { margin: 0 0 1.5em; width: 100%; }
 
+.bdp-hover{
+	cursor:pointer;
+	background:white;
+	transition:.2s all linear;
+}
+
+.bdp-hover:hover{
+	color:white;
+	background:#007bff;
+}
+
+#primary-menu-wrap .dropdown-menu{
+	background:#1C9CD8 !important;
+}
+
+
+#primary-menu > li > a{
+	transition:.2s all linear;
+}
+#primary-menu > li > a:hover{
+	background:#1C9CD8;
+	color:white !important;
+}
+
+
+.nav-tabs .nav-link{
+	border:none;
+}
+
+.nav .nav-item a.active{
+	color:#007bff !important;
+	background:transparent !important;
+	border:none !important;
+}
+
+.nav-tabs .nav-link:hover{
+	border:none;
+	color:#007bff;
+}
+
+.nav .nav-item a{
+	color:#b8b8b8;
+}
+
+.nav .nav-item{
+	flex-grow:1 !important;
+}
+
+.nav .nav-item:first-child{
+	text-align:left;
+}
+.nav .nav-item:last-child{
+	text-align:right;
+}
+
+@media screen and (max-width:500px){
+	.nav .nav-item{
+		text-align:center !important;
+	}
+}
+
+
+
+@media screen and (max-width:768px){
+	#masthead{
+		position:relative !important;
+	}
+	#content{
+		top:0px !important;
+	}
+	#social-medias-top{
+		display:none;
+	}
+}
+
+.beforedrop{
+	height:0;
+	overflow:hidden;
+	transition:.3s all linear;
+}
+
+@keyframes droping{
+	from{
+		height:0;
+	}
+	to{
+		height:100%;
+	}
+}
+@keyframes backtotop{
+	from{
+		height:100%;
+	}
+	to{
+		height:0;
+	}
+}
+
+.dropbranch{
+	height:100%;
+}
+/* .upbranch{
+	animation: backtotop .6s ease-in-out forwards;
+} */
+
+@keyframes rotatedown{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(90deg);
+	}
+}
+
+@keyframes rotateback{
+	from{
+		transform:rotate(90deg);
+	}
+	to{
+		transform:rotate(0deg);
+	}
+}
+
+.rotatedown{
+	animation: rotatedown .4s ease-in-out forwards;
+}
+.rotateback{
+	animation: rotateback .4s ease-in-out forwards;
+}
+
+.happen-title{
+	height:50px;
+	overflow:hidden;
+	font-weight:600;
+}
+
+.widget{
+	padding:0px !important;
+}
+
+.widget li{
+	text-align:right;
+	padding:3px 0px;
+	padding-right:20px;
+}
+.widget-area ul li{
+	list-style:none !important;
+	text-decoration:none;
+}
+.widget-area ul li:not(:last-child){
+	border-bottom:1.2px solid #dbdbdb;
+}
+body{
+	overflow-x:hidden !important;
+	overflow-y:auto;
+}
+.widget-title{
+	padding:20px 0px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:white;
+	background:#1C9CD8;
+}
+
+.widget-area ul{
+	padding-bottom:10px;
+}
+
+.corporate-dropdown{
+	margin-top:-17px;
+	background:#f6f6f6;
+	height:0px;
+	overflow:hidden;
+	transition:.4s all linear;
+}
+
+.corporateshow{
+	height:auto;
+}
+.corporate-dropdown *{
+	list-style:none;
+}
+.corporate-dropdown ul{
+	padding-left:60px;
+	font-size:13px;
+}
+
+.corporate-dropdown ul li{
+	margin:8px 0px;
+	color:#1C9CD8;
+	font-weight:400;
+	cursor:pointer;
+}
+.corporate-dropdown ul li:hover{
+	font-weight:600;
+}
+
+
+.error-404 *{
+	list-style:none !important;
+}
 /* Text meant only for screen readers. */
 .screen-reader-text { border: 0; clip: rect(1px, 1px, 1px, 1px); -webkit-clip-path: inset(50%); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
 
@@ -66,6 +268,19 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 .bypostauthor { display: block; }
 
+*{
+	font-family: 'Montserrat', sans-serif !important;
+}
+i{
+	font-family:"Font Awesome 5 Free" !important;
+}
+
+.fab{
+	font-family:"Font Awesome 5 Brands" !important;
+}
+.oi{
+	font-family:"Icons" !important;
+}
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */ display: none; }
 

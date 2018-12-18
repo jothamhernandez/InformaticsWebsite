@@ -20,7 +20,8 @@
 	<link rel="stylesheet" href="/wp-content/themes/informatics-template/informatics.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="/wp-content/themes/informatics-template/assets/js/informatics.js"></script>
-	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -45,7 +46,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-4' ); ?></a>
 	
 	<header id="masthead" class="fixed-top site-header <?php if ( get_theme_mod( 'sticky_header', 0 ) ) : echo 'sticky-top'; endif; ?>">
-		<div class="container-fluid" style="background-color: #e5e5e5; color:#c2c2c2;">
+		<div id="social-medias-top" class="container-fluid" style="background-color: #e5e5e5; color:#c2c2c2;">
 			<div class="row">
                 <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
                     <p class="p-1 m-1"><i class="fas fa-share-alt"></i> Our Social</p>
@@ -55,13 +56,16 @@
                 </div>
                 <div class="col-md-6 text-md-right text-center">
                     <p class="p-1 m-1">
-                        <a href="mailto:info.marketing@informatics.com.ph"><i class="oi oi-envelope-closed"></i> info.marketing@inforamtics.com.ph</a>
+                        <a href="mailto:info.marketing@informatics.com.ph"><i class="oi oi-envelope-closed"></i> info.marketing@informatics.com.ph</a>
                     </p>
                 </div>
             </div>
-		</div>
+		</div>	
 		<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg">
 			<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?><div class="container"><?php endif; ?>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="primary-menu-wrap" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<?php the_custom_logo(); ?>
 
 				<div class="site-branding-text">
@@ -82,10 +86,27 @@
 		                }
 					?>
 				</div>
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="primary-menu-wrap" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+					<div id="search-icon-wrap-1" style="margin-right:-20px;"><i id="search-icon-1" class="fa fa-search"></i></div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".social-media-collapse" aria-controls="social-media-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<div id="dots-icon-wrap" class="mr-1"><i class="fa fa-ellipsis-h" style="color:#007bff"></i></div>
+					</button>		
+					 <!-- <div id="dots-icon-wrap" class="pr-3"><i class="fa fa-ellipsis-h" style="color:#007bff"></i></div> -->
+					 <div id="social-media-dropdown" class="collapse social-media-collapse">
+						<ul id="social-media-menu" class="navbar-nav ml-auto">
+							<li class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+								<a href="#" class="nav-link"><i class='fab fa-facebook mr-2'></i>Facebook</a>
+							</li>
+							<li class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+								<a href="#" class="nav-link"><i class='fab fa-twitter-square mr-2'></i>Twitter</a>
+							</li>
+							<li class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+								<a href="#" class="nav-link"><i class='fab fa-youtube-square mr-2'></i>Youtube</a>
+							</li>
+							<li class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+								<a href="#" class="nav-link"><i class='oi oi-envelope-closed'></i> info.marketing@informatics.com.ph</a>
+							</li>
+						</ul>
+					 </div>
 				<?php
 					wp_nav_menu( array(
 						'theme_location'  => 'menu-1',
@@ -100,6 +121,7 @@
 			            'walker'          => new WP_bootstrap_4_walker_nav_menu()
 					) );
 				?>
+				<div id="search-icon-wrap-2" class="pl-2"><i id="search-icon-2" class="fa fa-search"></i></div>
 			<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?></div><!-- /.container --><?php endif; ?>
 		</nav><!-- #site-navigation -->
 		<nav id="site-sub-navigation" class="main-navigation navbar navbar-expand-lg navbar-default">
@@ -119,10 +141,15 @@
 				?>
 		<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?></div><!-- /.container --><?php endif; ?>
 		</nav>
+		<div class="white">
+		<?php get_search_form(true);?>
+	    </div>
 	</header><!-- #masthead -->
 	
-
 	<div id="content" class="site-content">
+	<?php 
+ 		include 'template-parts/head-carousel.php';
+	?>
 		<?php if ( function_exists('yoast_breadcrumb')  && !is_home()) {?>
 	<div class="section-container-holder p-2" style="background-color: #e5e5e5; color: #c2c2c2;">
 		<div class="section-container">
@@ -130,7 +157,11 @@
 				<div class="container-fluid">
 					<div class="col-md-12 d-flex align-items-center justify-content-center">
 						<?php 
-							echo "<h3 class='m-0 p-0 float-left flex-grow-1'>" . get_the_title() . "</h3>";
+	                     if(get_the_title()=="Bachelor of Science in Accounting Information System"){
+							 echo "<h3 class='m-0 p-0 float-left flex-grow-1'>" . "Bachelor's Degreee Program" . "</h3>";
+						 }else{
+							echo "<h3 class='m-0 p-0 float-left flex-grow-1'>" . get_the_title() . "</h3>";	 
+						 }
 						yoast_breadcrumb('<p id="breadcrumbs"class="m-0 p-0 text-right flex-grow-1">','</p>');
 						?>
 					</div>
@@ -139,3 +170,4 @@
 		</div>
 	</div>
 	<?php } ?> 
+	

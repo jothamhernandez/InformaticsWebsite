@@ -15,7 +15,6 @@ get_header(); ?>
 
 	<div class="container">
 		<div class="row">
-
 			<?php if ( $default_sidebar_position === 'no' ) : ?>
 				<div class="col-md-12 wp-bp-content-width">
 			<?php else : ?>
@@ -36,9 +35,9 @@ get_header(); ?>
 				        ) );
 
 						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
+						// if ( comments_open() || get_comments_number() ) :
+						// 	comments_template();
+						// endif;
 
 					endwhile; // End of the loop.
 					?>

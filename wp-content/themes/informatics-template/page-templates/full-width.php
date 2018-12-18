@@ -21,7 +21,7 @@ get_header(); ?>
 
                 endwhile; // End of the loop.
                 ?>
-
+                 <?php get_template_part('template-parts/whats-happening','whats'); ?>
             </main><!-- #main -->
         </div><!-- #primary -->
     </div>
