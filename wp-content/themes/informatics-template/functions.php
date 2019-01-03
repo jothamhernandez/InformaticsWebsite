@@ -216,8 +216,7 @@ function custom_excerpt_length($length) {
   return 8;
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
-<<<<<<< HEAD
-=======
+
 
 function wpbsearchform( $form ) {
  
@@ -231,4 +230,3 @@ function wpbsearchform( $form ) {
 }
  
 add_shortcode('wpbsearch', 'wpbsearchform');
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
