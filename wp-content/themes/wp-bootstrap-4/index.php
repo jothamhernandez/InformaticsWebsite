@@ -15,7 +15,7 @@
 get_header(); ?>
 <div class="section-container-holder">
                 <div class="section-container" style="overflow: hidden;">
-                    <div class="overlay bg-grayscale" style="background-image: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg');"></div>
+                    <div class="overlay bg-grayscale" style="background-image: url('http://dev.info-website.com/wp-content/uploads/2018/09/northgate.jpg');"></div>
                     <div class="content py-5">
                         <div class="container">
                             <div class="row">
@@ -54,7 +54,7 @@ get_header(); ?>
 
 
                                         <article class="col-md-4">
-                                            <div class="post-entry" style="background-image:url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/Article-3.jpg'); background-size: cover; background-position: top center;"></div>
+                                            <div class="post-entry" style="background-image:url('http://dev.info-website.com/wp-content/uploads/2018/09/Article-3.jpg'); background-size: cover; background-position: top center;"></div>
                                             <div class="content-title">
                                                 <h4>Informatics Philippines brings home Medallion of Excellence from
                                                     World Skills ASEAN Competition</h4>
@@ -66,13 +66,13 @@ get_header(); ?>
                                                     representing the country in the World<br>
                                                     Skills ASEAN Competition held in Bangkok, Thailand which concluded
                                                     last September 4, 2018.<br>
-                                                    <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/#more-173"
+                                                    <a href="http://dev.info-website.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/#more-173"
                                                         class="more-link">Read More</a></p>
                                             </div>
 
                                         </article>
                                         <article class="col-md-4">
-                                            <div class="post-entry" style="background-image: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/Article-2.jpg'); background-size: cover; background-position: top center;"></div>
+                                            <div class="post-entry" style="background-image: url('http://dev.info-website.com/wp-content/uploads/2018/09/Article-2.jpg'); background-size: cover; background-position: top center;"></div>
                                             <div class="content-title">
                                                 <h4>Informatics Philippines’ seals new partnership with Philippine
                                                     Retirement Authority (PRA)</h4>
@@ -82,13 +82,13 @@ get_header(); ?>
                                                     partnership<br>
                                                     agreement last September 13 that will provide new opportunities for
                                                     retirees.</p>
-                                                <p> <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/#more-167"
+                                                <p> <a href="http://dev.info-website.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/#more-167"
                                                         class="more-link">Read More</a></p>
                                             </div>
 
                                         </article>
                                         <article class="col-md-4">
-                                            <div class="post-entry" style="background-image:url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/Article-1.jpg'); background-size: cover; background-position: top center;"></div>
+                                            <div class="post-entry" style="background-image:url('http://dev.info-website.com/wp-content/uploads/2018/09/Article-1.jpg'); background-size: cover; background-position: top center;"></div>
                                             <div class="content-title">
                                                 <h4>Congressman Yul Servo partners with Informatics College – Manila
                                                     for educational programs within his district.</h4>
@@ -98,7 +98,7 @@ get_header(); ?>
                                                     deal with Congressman Yul Servo after the latter paid Informatics
                                                     College – Manila a visit last September 13 to discuss scholarship<br>
                                                     programs for Manilenos.<br>
-                                                    <a href="https://www.informatics-inculab.com/2018/09/14/scholarship_with_info_manila/#more-164"
+                                                    <a href="http://dev.info-website.com/2018/09/14/scholarship_with_info_manila/#more-164"
                                                         class="more-link">Read More</a></p>
                                             </div>
 

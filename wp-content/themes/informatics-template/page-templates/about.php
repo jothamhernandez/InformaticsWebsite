@@ -10,7 +10,11 @@ get_header(); ?>
                         <div class="container-fluid">
                             <div class="row d-flex">
                                 <div class="col-md-6 m-0 p-0">
+<<<<<<< HEAD
                                     <img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg"
+=======
+                                    <img src="http://dev.info-website.com/wp-content/uploads/2018/12/Info-Website-09.jpg"
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         alt="" class="img-fluid w-100" style="height:100%;">
                                 </div>
                                 <div class="col-md-6 m-0 p-0 bg-orange" style="color:white;">
@@ -48,7 +52,11 @@ get_header(); ?>
                     <div class="content">
                         <div class="container">
                             <div class="row">
+<<<<<<< HEAD
                                 <div class="col-md-12" style="padding:80px;">
+=======
+                                <div class="col-md-12 padding-80">
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                     <h1 class="text-uppercase text-center p-3 p-md-2 mt-3">mission & vision</h1>
                                     <p class="text-center p-3 p-md-2 mb-3 up-anim">“We are the most preferred and leading private
                                         educational institution offering IT-enhanced programs transforming students to
@@ -136,7 +144,11 @@ get_header(); ?>
 
             <div class="section-container-holder">
                 <div class="section-container pb-md-5" style="overflow: hidden;">
+<<<<<<< HEAD
                     <div class="overlay bg-grayscale" style="background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center fixed; background-size:cover;"></div>
+=======
+                    <div class="overlay bg-grayscale" style="background: url('http://dev.info-website.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center fixed; background-size:cover;"></div>
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                     <div class="content py-5">
                         <div class="container mt-md-5">
                             <div class="row">
@@ -150,7 +162,11 @@ get_header(); ?>
                                 </div>
                                 <div class="container my-3">
                                 <div class="row">
+<<<<<<< HEAD
                                 <div class="col-4 text-center reasons" v-for="reason in reasons">
+=======
+                                <div class="col-md-4 text-center reasons" v-for="reason in reasons">
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                     <div class="px-3 py-2 mx-lg-5 px-sm-5">
                                         <div class="img-holder-main">
                                             <img :src="reason.icon" alt="" class="img-fluid">
@@ -177,7 +193,11 @@ get_header(); ?>
                             <div class="container-fluid">
                                 <div class="row d-flex flex-row-reverse align-items-stretch justify-content-center">
                                     <div class="col-md-6 m-0 p-0">
+<<<<<<< HEAD
                                         <img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-10.jpg"
+=======
+                                        <img src="http://dev.info-website.com/wp-content/uploads/2018/12/Info-Website-10.jpg"
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                             alt="" class="img-fluid w-100">
                                     </div>
                                     <div class="col-md-6 m-0 p-md-5">

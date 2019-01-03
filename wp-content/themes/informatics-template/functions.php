@@ -216,3 +216,19 @@ function custom_excerpt_length($length) {
   return 8;
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
+<<<<<<< HEAD
+=======
+
+function wpbsearchform( $form ) {
+ 
+    $form = '<form role="search" method="get" class="searchform wp-bootstrap-4-searchform mt-4 mb-3" action="' . home_url( '/' ) . '" >
+    <div>
+    <input type="text" class="s form-control faq-search"" value="' . get_search_query() . '" name="s" id="s" placeholder="Type keywords to find answers"/>
+    </div>
+    </form>';
+ 
+    return $form;
+}
+ 
+add_shortcode('wpbsearch', 'wpbsearchform');
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12

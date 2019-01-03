@@ -25,7 +25,11 @@ get_header(); ?>
                              while ( $myposts->have_posts() ) : $myposts->the_post(); ?>
                               <article id="post-<?php the_ID(); ?>" <?php post_class( 'nocard col-md-4 col-6' ); ?>>
 								<div class="my-card">
+<<<<<<< HEAD
 										<?php echo get_the_post_thumbnail()?>
+=======
+										<?php echo get_the_post_thumbnail($post_id, 'thumbnail')?>
+>>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 										<h5 class="mt-3 happen-title"><?php the_title();?></h5>
 										<div class="mt-3 mb-1">
 										 <?php the_excerpt();?>

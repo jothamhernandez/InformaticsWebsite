@@ -136,7 +136,7 @@ get_header(); ?>
 
             <div class="section-container-holder">
                 <div class="section-container" style="overflow: hidden;">
-                    <div class="overlay bg-grayscale" style="background-image: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg');"></div>
+                    <div class="overlay bg-grayscale" style="background-image: url('http://dev.info-website.com/wp-content/uploads/2018/09/northgate.jpg');"></div>
                     <div class="content py-5">
                         <div class="container">
                             <div class="row">
