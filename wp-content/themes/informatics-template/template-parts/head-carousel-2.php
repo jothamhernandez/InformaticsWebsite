@@ -25,7 +25,7 @@
 <<<<<<< HEAD
       <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/09/Slider-02.jpg" alt="First slide">
 =======
-      <img class="d-block w-100" src="http://dev.info-website.com/wp-content/uploads/2018/09/Slider-02.jpg" alt="First slide">
+      <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/09/Slider-02.jpg" alt="First slide">
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
     </div>
   </div>

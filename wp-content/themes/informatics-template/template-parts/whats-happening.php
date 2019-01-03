@@ -15,11 +15,11 @@
                                             <div class="post-entry" ><img class="img-fluid" alt="ASEAN Competition" src="https://www.informatics-inculab.com/wp-content/uploads/2018/09/Article-3.jpg"></div>
 =======
                                             <div class="post-entry" >
-                                                <!-- <img class="img-fluid" alt="ASEAN Competition" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg"> -->
+                                                <!-- <img class="img-fluid" alt="ASEAN Competition" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-3.jpg"> -->
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg" media="(max-width: 500px)">
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg" alt="First Slide">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg" media="(max-width: 500px)">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-3.jpg">
+                                                <img class="d-block w-100 img-fluid" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-3.jpg" alt="First Slide">
                                             </picture>
                                             </div>
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
@@ -39,7 +39,7 @@
 <<<<<<< HEAD
                                                          <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/#more-173"
 =======
-                                                         <a href="http://dev.info-website.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/#more-173"
+                                                         <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/#more-173"
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                                         class="more-link">Read More</a>
                                                     </div>
@@ -52,9 +52,9 @@
 =======
                                             <div class="post-entry">
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg" media="(max-width: 500px)">
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2018/12/Article-2-e1545179133584.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-2-e1545179133584.jpg" alt="First Slide">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg" media="(max-width: 500px)">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-2-e1545179133584.jpg">
+                                                <img class="d-block w-100 img-fluid" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-2-e1545179133584.jpg" alt="First Slide">
                                             </picture>
                                             </div>
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
@@ -71,7 +71,7 @@
 <<<<<<< HEAD
                                                          <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/#more-167"
 =======
-                                                         <a href="http://dev.info-website.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/#more-167"
+                                                         <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/#more-167"
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                                         class="more-link">Read More</a>
                                                      </div>
@@ -83,11 +83,11 @@
                                         <div class="post-entry"><img class="img-fluid" alt="ASEAN Competition" src="https://www.informatics-inculab.com/wp-content/uploads/2018/09/Article-1.jpg"></div>
 =======
                                         <div class="post-entry">
-                                            <!-- <img class="img-fluid" alt="ASEAN Competition" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg"> -->
+                                            <!-- <img class="img-fluid" alt="ASEAN Competition" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg"> -->
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg" media="(max-width: 500px)">
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg" alt="First Slide">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg" media="(max-width: 500px)">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg">
+                                                <img class="d-block w-100 img-fluid" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg" alt="First Slide">
                                             </picture>
                                         </div>
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
@@ -106,7 +106,7 @@
 <<<<<<< HEAD
                                                         <a href="https://www.informatics-inculab.com/2018/09/14/scholarship_with_info_manila/#more-164"
 =======
-                                                        <a href="http://dev.info-website.com/2018/09/14/scholarship_with_info_manila/#more-164"
+                                                        <a href="https://www.informatics-inculab.com/2018/09/14/scholarship_with_info_manila/#more-164"
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                                         class="more-link">Read More</a>
                                                     </div>

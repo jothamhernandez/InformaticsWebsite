@@ -13,4 +13,4 @@ PROCESSED on Wed, 19 Dec 2018 03:24:50 +0000
 /wp-content/uploads/elementor/css/global.css
 /wp-content/uploads/elementor/css/post-364.css
 /wp-content/plugins/kirki/assets/css/kirki-styles.css
-PROCESSED from http://dev.info-website.com/programs/bachelors-degree-programs/bachelor-of-science-in-information-system/
+PROCESSED from https://www.informatics-inculab.com/programs/bachelors-degree-programs/bachelor-of-science-in-information-system/

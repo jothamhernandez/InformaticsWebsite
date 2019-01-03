@@ -292,11 +292,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -350,11 +350,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -408,11 +408,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -468,11 +468,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -536,11 +536,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -590,11 +590,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -643,11 +643,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -701,11 +701,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -764,11 +764,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -801,11 +801,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -835,11 +835,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
@@ -869,11 +869,11 @@ get_header(); ?>
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
 =======
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],

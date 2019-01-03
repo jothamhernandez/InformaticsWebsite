@@ -146,22 +146,22 @@ get_footer();
                                     {
                                         link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/lcci.png'
 =======
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/acpi.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/acpi.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/Comptia-e1545010727697.jpg'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Comptia-e1545010727697.jpg'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/cybersecurity.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/cybersecurity.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2019/01/GDAP-e1546483628910.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2019/01/GDAP-e1546483628910.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/Google-Apps-for-Educ-e1545010754643.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Google-Apps-for-Educ-e1545010754643.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/lcci.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/lcci.png'
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                     },
                                 ],
@@ -170,7 +170,7 @@ get_footer();
 <<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
 =======
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“I was looking for ways to graduate in a short span of time without compromising the quality of education and I think that’s how Informatics has helped me a lot.”`,
                                         person: `-Mark Bernales`
@@ -179,7 +179,7 @@ get_footer();
 <<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Norina-May.jpg`,
 =======
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Norina-May.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Norina-May.jpg`,
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“Informatics made a big difference in my life.” Informatics did not fail her with her dream of working abroad through advanced approach of education.`,
                                         person: `-Dorina May Luna`
@@ -188,7 +188,7 @@ get_footer();
 <<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
 =======
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“Informatics allowed me to grow professionally.” Informatics values every student and provide them the greatest services to make each one of them industry ready individuals.`,
                                         person: `-Jiovanney Emmanuel Bustamante`
@@ -197,7 +197,7 @@ get_footer();
 <<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Rupen.jpg`,
 =======
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Rupen.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Rupen.jpg`,
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“Informatics is worldwide, students will definitely get jobs easily.” Informatics offered him a vast curriculum that allowed him to experience different subjects and broaden his horizons.`,
                                         person: `-Rupen Rajkarnikar`

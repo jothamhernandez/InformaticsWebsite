@@ -13,7 +13,7 @@ get_header(); ?>
 <<<<<<< HEAD
                                     <img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg"
 =======
-                                    <img src="http://dev.info-website.com/wp-content/uploads/2018/12/Info-Website-09.jpg"
+                                    <img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg"
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         alt="" class="img-fluid w-100" style="height:100%;">
                                 </div>
@@ -147,7 +147,7 @@ get_header(); ?>
 <<<<<<< HEAD
                     <div class="overlay bg-grayscale" style="background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center fixed; background-size:cover;"></div>
 =======
-                    <div class="overlay bg-grayscale" style="background: url('http://dev.info-website.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center fixed; background-size:cover;"></div>
+                    <div class="overlay bg-grayscale" style="background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center fixed; background-size:cover;"></div>
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                     <div class="content py-5">
                         <div class="container mt-md-5">
@@ -196,7 +196,7 @@ get_header(); ?>
 <<<<<<< HEAD
                                         <img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-10.jpg"
 =======
-                                        <img src="http://dev.info-website.com/wp-content/uploads/2018/12/Info-Website-10.jpg"
+                                        <img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-10.jpg"
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                             alt="" class="img-fluid w-100">
                                     </div>

@@ -4,4 +4,4 @@ PROCESSED on Wed, 19 Dec 2018 04:01:01 +0000
 /wp-content/themes/informatics-template/assets/css/bootstrap.css
 /wp-content/themes/informatics-template/style.css
 /wp-content/plugins/kirki/assets/css/kirki-styles.css
-PROCESSED from http://dev.info-website.com/
+PROCESSED from https://www.informatics-inculab.com/

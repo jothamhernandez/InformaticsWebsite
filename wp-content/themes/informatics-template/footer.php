@@ -99,7 +99,7 @@
 <<<<<<< HEAD
 	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
 =======
-	<img src="http://dev.info-website.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
+	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
 >>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 </div>
 </footer>
