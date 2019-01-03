@@ -17,11 +17,7 @@ get_header(); ?>
 
 <div class="section-container-holder">
                 <div class="section-container pb-md-5" style="overflow: hidden;">
-<<<<<<< HEAD
-                    <div class="overlay bg-grayscale" style="background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-01-e1545009903960.jpg') no-repeat center center fixed; background-size:cover;"></div>
-=======
                     <div class="overlay bg-grayscale bg-northgate"></div>
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                     <div class="content py-5">
                         <div class="container mt-md-5">
                             <div class="row">
@@ -35,11 +31,7 @@ get_header(); ?>
                                 </div>
                                 <div class="container my-3">
                                 <div class="row">
-<<<<<<< HEAD
-                                <div class="col-4 text-center reasons" v-for="reason in reasons">
-=======
                                 <div class="col-md-4 text-center reasons" v-for="reason in reasons">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                     <div class="px-3 py-2 mx-lg-5 px-sm-5">
                                         <div class="img-holder-main">
                                             <img :src="reason.icon" alt="" class="img-fluid">
@@ -128,24 +120,6 @@ get_footer();
                             return {
                                 partners: [
                                     {
-<<<<<<< HEAD
-                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/acpi.png'
-                                    },
-                                    {
-                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Comptia-e1545010727697.jpg'
-                                    },
-                                    {
-                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/cybersecurity.png'
-                                    },
-                                    {
-                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/GDAP-1-e1545010821355.jpg'
-                                    },
-                                    {
-                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Google-Apps-for-Educ-e1545010754643.png'
-                                    },
-                                    {
-                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/lcci.png'
-=======
                                         link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/acpi.png'
                                     },
                                     {
@@ -162,43 +136,26 @@ get_footer();
                                     },
                                     {
                                         link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/lcci.png'
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                     },
                                 ],
                                 testimonials: [
                                     {
-<<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
-=======
-                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“I was looking for ways to graduate in a short span of time without compromising the quality of education and I think that’s how Informatics has helped me a lot.”`,
                                         person: `-Mark Bernales`
                                     },
                                     {
-<<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Norina-May.jpg`,
-=======
-                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Norina-May.jpg`,
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“Informatics made a big difference in my life.” Informatics did not fail her with her dream of working abroad through advanced approach of education.`,
                                         person: `-Dorina May Luna`
                                     },
                                     {
-<<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
-=======
-                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“Informatics allowed me to grow professionally.” Informatics values every student and provide them the greatest services to make each one of them industry ready individuals.`,
                                         person: `-Jiovanney Emmanuel Bustamante`
                                     },
                                     {
-<<<<<<< HEAD
                                         image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Rupen.jpg`,
-=======
-                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Rupen.jpg`,
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                         message: `“Informatics is worldwide, students will definitely get jobs easily.” Informatics offered him a vast curriculum that allowed him to experience different subjects and broaden his horizons.`,
                                         person: `-Rupen Rajkarnikar`
                                     }
