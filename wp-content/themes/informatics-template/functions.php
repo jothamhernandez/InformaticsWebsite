@@ -201,3 +201,31 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+// for SVG
+function add_file_types_to_uploads($file_types){
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($file_types, $new_filetypes );
+	return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
+
+function custom_excerpt_length($length) {
+  return 8;
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
+
+function wpbsearchform( $form ) {
+ 
+    $form = '<form role="search" method="get" class="searchform wp-bootstrap-4-searchform mt-4 mb-3" action="' . home_url( '/' ) . '" >
+    <div>
+    <input type="text" class="s form-control faq-search"" value="' . get_search_query() . '" name="s" id="s" placeholder="Type keywords to find answers"/>
+    </div>
+    </form>';
+ 
+    return $form;
+}
+ 
+add_shortcode('wpbsearch', 'wpbsearchform');

@@ -17,7 +17,7 @@
 			$ = jQuery;
 			this.content = $('#slider-content')[0];
 			this.dots = Math.ceil($('#slider-content')[0].scrollWidth / $('#slider-content').width());
-			this.intervalId = setInterval(this.interval, this.sliderSpeed);
+			// this.intervalId = setInterval(this.interval, this.sliderSpeed);
 		},
 		methods: {
 			getDotColor(dot){

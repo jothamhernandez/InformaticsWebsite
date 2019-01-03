@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'card mt-3r' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-2 mt-3' ); ?>>
 	<div class="card-body">
 
 		<?php if ( is_sticky() ) : ?>

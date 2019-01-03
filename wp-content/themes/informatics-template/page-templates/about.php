@@ -8,13 +8,13 @@ get_header(); ?>
                 <div class="section-container">
                     <div class="content">
                         <div class="container-fluid">
-                            <div class="row d-flex align-items-center justify-content-center">
+                            <div class="row d-flex">
                                 <div class="col-md-6 m-0 p-0">
-                                    <img src="https://informatics.edu.ph/wp-content/uploads/2018/09/Info-Website-09.jpg"
-                                        alt="" class="img-fluid w-100">
+                                    <img src="http://dev.info-website.com/wp-content/uploads/2018/12/Info-Website-09.jpg"
+                                        alt="" class="img-fluid w-100" style="height:100%;">
                                 </div>
-                                <div class="col-md-6 m-0 p-0">
-                                    <div class="p-md-5 p-3">
+                                <div class="col-md-6 m-0 p-0 bg-orange" style="color:white;">
+                                    <div class="p-md-5 p-3 up-anim">
                                         <h1 class="text-uppercase">informatics at a glance</h1>
                                         <p>From its humble beginning as a premiere IT training institution founded in
                                             1993, Informatics Philippines has successfully penetrated the academic
@@ -48,9 +48,9 @@ get_header(); ?>
                     <div class="content">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <h1 class="text-uppercase text-center p-3 p-md-5">mission & vision</h1>
-                                    <p class="text-center p-3 p-md-5">“We are the most preferred and leading private
+                                <div class="col-md-12 padding-80">
+                                    <h1 class="text-uppercase text-center p-3 p-md-2 mt-3">mission & vision</h1>
+                                    <p class="text-center p-3 p-md-2 mb-3 up-anim">“We are the most preferred and leading private
                                         educational institution offering IT-enhanced programs transforming students to
                                         globally competitive individuals who can be innovators of the world.”</p>
                                 </div>
@@ -68,7 +68,7 @@ get_header(); ?>
                                 <div class="col-md-6 m-0 p-md-5 p-0 bg-orange">
                                     <div class="p-md-5 p-3">
                                         <h1 class="text-uppercase white">Milestones</h1>
-                                        <div>
+                                        <div class="up-anim">
                                             <p class="white"><strong style="display: block; margin: 0px !important;">1983</strong>The
                                                 Informatics Group is established in Singapore.
                                             </p>
@@ -105,7 +105,7 @@ get_header(); ?>
                                 <div class="col-md-6 m-0 p-md-5 p-0 bg-blue justify-content-between">
                                     <div class="p-md-5 p-3">
                                         <h1 class="text-uppercase white">Core Values</h1>
-                                        <div>
+                                        <div class="up-anim">
                                             <p class="white"><strong style="display: block; margin: 0px !important;">Student Centric</strong>We
                                                 focus in understanding our students and putting them first in
                                                 everything we do.
@@ -135,24 +135,33 @@ get_header(); ?>
             </div>
 
             <div class="section-container-holder">
-                <div class="section-container" style="overflow: hidden;">
-                    <div class="overlay bg-grayscale" style="background-image: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg');"></div>
+                <div class="section-container pb-md-5" style="overflow: hidden;">
+                    <div class="overlay bg-grayscale" style="background: url('http://dev.info-website.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center fixed; background-size:cover;"></div>
                     <div class="content py-5">
-                        <div class="container">
+                        <div class="container mt-md-5">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h1 class="text-center white text-uppercase my-3">Why Choose Informatics?</h1>
-                                    <p class="text-center white my-5">Informatics values your dreams as much as we
+                                    <p class="text-center white my-3">Informatics values your dreams as much as we
                                         value quality education. Thus, putting you first by
                                         providing a well-rounded curriculum that leads to employability and
                                         sustainability is our utmost
                                         priority.</p>
                                 </div>
-                                <div class="col-6 col-sm-4 text-center offset-3 offset-sm-0" v-for="reason in reasons">
+                                <div class="container my-3">
+                                <div class="row">
+                                <div class="col-md-4 text-center reasons" v-for="reason in reasons">
                                     <div class="px-3 py-2 mx-lg-5 px-sm-5">
-                                        <img :src="reason.icon" alt="" class="img-fluid">
+                                        <div class="img-holder-main">
+                                            <img :src="reason.icon" alt="" class="img-fluid">
+                                        </div>
                                     </div>
-                                    <p class="white">{{reason.why}}</p>
+                                    <p class="white font font-italic font-weight-light">{{reason.why}}</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-informatics-blue no-border">Learn More</button>
                                 </div>
                             </div>
                         </div>
@@ -168,13 +177,13 @@ get_header(); ?>
                             <div class="container-fluid">
                                 <div class="row d-flex flex-row-reverse align-items-stretch justify-content-center">
                                     <div class="col-md-6 m-0 p-0">
-                                        <img src="https://informatics.edu.ph/wp-content/uploads/2018/09/Info-Website-10.jpg"
+                                        <img src="http://dev.info-website.com/wp-content/uploads/2018/12/Info-Website-10.jpg"
                                             alt="" class="img-fluid w-100">
                                     </div>
                                     <div class="col-md-6 m-0 p-md-5">
-                                        <div class="p-md-5 p-3">
+                                        <div class="p-md-5 p-3 up-anim">
                                             <h1 class="text-uppercase">About the President</h1>
-                                            <p><strong>Leonardo Riingen</strong> is only 41 years old and has already contributed immensely to improving information technology (IT) training and education in the Philippines. </p>
+                                            <p><strong>Leonardo Riingen</strong> is entrepreneur who has already contributed immensely to improving information technology (IT) training and education in the Philippines. </p>
                                             <p>Riingen came up with the idea that an Information Technology training should be made available to people. When you think of Informatics, "the computer school in the mall ", Riingen is the man behind it. That is the innovative and creative, if not a proactive way of making business and fulfilling his dream of making IT accessible to the people. </p>
                                             <p>Utilizing his education in U.K., he applied the ladderized program in IT, patterned after the British education system, to allow students to learn skills and make them immediately employable. Also, he designed and customized IT training programs and curriculum for companies and government offices to give learners a comprehensive, organization-wide IT training. To make the IT education and training that his schools offer at par with international standards, his schools boast of international courses validated by the world's leading IT qualification awarding bodies; and maintains affiliations with IT industry technology frontrunners.</p>
                                             <a href="http://www.ust400.com/alumni/mr_leonardo_a_riingen"><i>Reference: UST 400 Alumni</i></a>
