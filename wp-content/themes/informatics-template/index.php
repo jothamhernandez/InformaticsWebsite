@@ -129,7 +129,7 @@ get_footer();
                                         link: 'http://dev.info-website.com/wp-content/uploads/2018/12/cybersecurity.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/GDAP-1-e1545010821355.jpg'
+                                        link: 'http://dev.info-website.com/wp-content/uploads/2019/01/GDAP-e1546483628910.png'
                                     },
                                     {
                                         link: 'http://dev.info-website.com/wp-content/uploads/2018/12/Google-Apps-for-Educ-e1545010754643.png'
