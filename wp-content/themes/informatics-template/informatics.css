@@ -2,11 +2,6 @@
 	visibility: hidden;
 } */
 
-<<<<<<< HEAD
-.dd-admission{
-	overflow: hidden;
-	height:0px;
-=======
 
 
 
@@ -45,7 +40,6 @@
 
 .delete-p > p{
 	display: none;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 }
 
 header .carousel-inner{
@@ -57,10 +51,6 @@ header .carousel-inner{
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 @media screen and (min-width:768px){
 	#social-media-dropdown{
 		display: none;
@@ -97,11 +87,8 @@ header .carousel-inner{
 	}
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 .img-holder-main{
 	width: 80px;
 	margin:auto;
@@ -149,12 +136,6 @@ header .carousel-inner{
 	width:100% !important;
 }
 .branch-slider-img{
-<<<<<<< HEAD
-	height:320px;
-}
-.pt-90{
-	padding-top:90px;
-=======
 	/* height:320px; */
 }
 
@@ -164,7 +145,6 @@ header .carousel-inner{
 
 .pt-90{
 	padding-top:20px;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 }
 
 @media screen and (max-width:568px){
@@ -317,333 +297,6 @@ header form{
 #menu-custom-side-menu li a:hover{
 	color:#007bff;
 	text-decoration:none !important;
-<<<<<<< HEAD
-}
-
-/*Corporate  */
- .corporate-list{
-	 cursor: pointer;
- }
-
- .corporate-list-m{
-	 margin-top: -10px !important;
- }
- 
- /* Alumni Relations */
- .black-overlay p{
-  margin-bottom: 0px;
- }
- @media screen and (max-width:576px){
-	.set-height{
-		height: auto !important;
-	}
- }
- .margin-off{
-	 padding:0px !important;
- }
- @media screen and (min-width:577px){	
-	.set-height{
-		height:600px !important;
-	}
- }
-/* Admission Detail Css */
-.my-orange-height{
-	height:250px;
-}
-.add-procedure-img{
-	width:100px;
-	margin: auto;
-}
-.table .thead-dark th:first-child{
-	background: transparent !important;
-	border: none
-}
-
-@media screen and (min-width:577px){	
-	.my-padding-admission{
-		padding-top: 80px;
-	}
-}
-
-#table-admission th{
-	border-top: none !important;
-}
-.table td{
-	border:1px solid #dee2e6;
-}
-
-
-/* Bg Color Grey */
-.bg-gray{
-	background: #f1f1f1;
-}
-
-/* Dropdown */
-.dropdown-menu{
-	margin:0px !important;
-	padding:0px !important;
-	width: 300px !important;
-}
-
-@media screen and (max-width:768px){
-	.dropdown-menu{
-		width: 100% !important;
-	}
-}
-
-.dropdown-menu li{
-	background-color: #1C9CD8;
-	text-align: center;
-}
-.dropdown-menu li:hover{
-	background-color: white;
-}
-/* .dropdown-menu a{
-	margin:0px 20px !important;
-} */
-
-/* Admission Css */
-.border-right-orange{
-	border-right: 15px solid orange;
-}
-.rotate{
-	transform: rotate(-90deg);
-	font-size:20px;
-	color: orange;
-}
-@media screen and (max-width:576px){
-	.rotate{
-		transform: rotate(0deg);
-	}
-}
-.right-side{
-	font-size: 18px;
-}
-.margin-negative{
-	margin-bottom: -48px;
-}
-.back-white{
-	position: absolute;
-	top:0px;
-	left:0px;
-	width: 100%;
-	height: 100%;
-	background: rgba(255,255,255,.6);
-}
-.my-title{
-	font-weight: 300;
-    font-size: 40px;
-    text-transform: uppercase;
-}
-.my-admission-image{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-19-1.jpg') no-repeat center center;
-	background-size: cover;
-}
-
-.bg-admission{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center;
-	background-size: cover;
-}
-
-
-/* Diploma Course */
-.my-diploma-image{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/11/Info-Website-38.jpg') no-repeat center center;
-	background-size: cover;
-}
-.diploma-course-p{
-	font-size:14.5px;
-}
-/* .diploma-courses-p-list{
-	font-size:14.2px;
-} */
-
-
-
-/* Senior High Tracks */
-.senior-high-yellow-text{
-	font-size:19px;
-	color: #ffa60a;
-}
-.senior-high-p{
-	font-size: 14px;
-}
-.senior-high-list-p{
-	font-size: 14px;
-}
-
-
-
-
-/* Career Path */
-.career-path-ul{
-	margin:20px 0px 0px 0px;
-	padding:0px;
-}
-
-/* No Card Css */
-.my-card-2 .entry-title{
-	font-weight: 300;
-	font-size: 40px;
-	text-transform: uppercase;
-}
-
-
-
-/* Bachelors Degree Programs */
-.my-card-2 .bachelor ul li{
-	border-left: none;
-	border-top:none;
-	border-left:none;
-	border-right:none;
-	padding-left:0px;
-	padding-right:0px;
-	background: transparent;
-	transition: .2s all linear;
-	cursor: pointer;
-}
-.my-card-2 .bachelor ul li:hover{
-	color:#1C9CD8;
-}
-
-/* Programs Css */
-.cursor-pointer p{
- margin-bottom: 0px;
-}
-.cursor-pointer .black-overlay{
-	transition: .4s all linear;
-}
-.cursor-pointer:hover .black-overlay{
-	top: 83%;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.9));
-	height:19%;
-}
-
-
-.adjust-width{
-	width: 80%;
-	margin-top: 0%;
-	font-size:28px;
-	transition:.4s all linear;
-}
-
-@media screen and (max-width:500px){
-	.adjust-width{
-		font-size: 22px;
-		width: 90%;
-	}
-	
-}
-
-.program-margin{
-/*   margin-top: 26%; */
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	width:100%;
-}
-
-.position-hor-ver{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 500px;
-}
-.un-row{
-	margin-right: 0px !important;
-	margin-left: 0px !important;
-}
-
-@media screen and (min-width:1000px){
-	.height-350{
-		height:285px !important;
-	}
-}
-
-#programs-container p{
-	padding: 0px;
-	margin: 0px;
-}
-.black-overlay{
-	top:0px;
-	left:0px;
-	width:100%;
-	height:102%;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.7));
-}
-.cursor-pointer{
-	cursor: pointer;
-	overflow: hidden;
-}
-
-#breadcrumbs a{
-	color:#c2c2c2 !important;
-}
-
-#breadcrumbs a:hover{
-	color: #007bff !important;
-}
-
-#breadcrumbs .breadcrumb_last{
-	color: #007bff !important;
-}
-
-@media screen and (max-width:768px){
-	#site-navigation{
-		padding:20px 0px !important;
-	}
-}
-
-#primary-menu-wrap .nav-item{
-	margin:0px !important;
-}
-
-#primary-menu > .nav-item:hover{
-	background: #1C9CD8 !important;
-}
-
-#primary-menu > .nav-item:hover > a{
-	color:white !important;
-}
-/* Sidebar Css */
-/* #archives-2{
-	padding: 0px;
-	margin-bottom: 20px;
-} */
-
-hr{
-	width:100%;
-	height: 3px;
-}
-.success-p-size{
-	font-size: 13px;
-}
-
-.success-row:not(:first-child){
-	border-top: 2px solid #c2c2c2;
-}
-
-@media screen and (max-width:768px){
-	.success-image-container{
-		width: 50px;
-		margin: auto;
-	}
-}
-
-
-
-/* Whats Happening Posts */
-
-
-.my-card{
-	height:305px;
-	overflow: hidden;
-	margin-bottom: 23px;
-}
-
-=======
 }
 
 /*Corporate  */
@@ -985,7 +638,6 @@ hr{
 	margin-bottom: 23px;
 }
 
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 
 
 .nocard p{
@@ -996,10 +648,7 @@ hr{
 
 .nocard img{
 	height:150px;
-<<<<<<< HEAD
-=======
 	width:100%;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 }
 
 /* Posts */
@@ -1007,13 +656,6 @@ hr{
 	height:120px;
 	overflow: hidden;
 }
-<<<<<<< HEAD
-
-.content-excerpt p{
-	height:230px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-=======
 .content-title h4{
 	font-family: 'Source Sans Pro' !important;
 	font-weight:600 !important;
@@ -1027,7 +669,6 @@ hr{
 	margin-top:10px;
 	text-overflow: ellipsis;
 	font-size: 1.12em;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 }
 @media screen and (max-width:768px){
 	.content-excerpt p{
@@ -1054,8 +695,6 @@ hr{
 	width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .carousel-title-container .carousel-title{
 	font-weight: bolder;
 	text-transform: uppercase;
@@ -1076,35 +715,21 @@ hr{
 	}
 }
 
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 @media screen and (max-width:800px){
 	.carousel-title-container{
 		top:5%;
 	}
-<<<<<<< HEAD
-	.carousel-sub-title{
-		display: none;
-	}
-	.carousel-title-container .carousel-title{
-		font-size: 20px !important;
-		width:250px !important;
-=======
 
 	.carousel-title-container .carousel-title{
 		font-size: 20px;
 		width:203px !important;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 		line-height:25px !important;
 	}
 	.carousel-title-container button{
 		margin:0px !important;
 	}
 	.carousel-title-container{
-<<<<<<< HEAD
-		top:22%;
-=======
 		top:6vw;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 	}
 	#carouselExampleIndicators ol li{
 		width: 10px !important;
@@ -1117,18 +742,6 @@ hr{
 	}
 	
 }
-<<<<<<< HEAD
-
-.carousel-title-container .carousel-title{
-	font-weight: bolder;
-	text-transform: uppercase;
-	font-size: 40px;
-	letter-spacing:3px;
-	line-height:44px;
-	width:470px;
-}
-
-=======
 #inquire-now{
 	font-size:1.2rem;
 	padding: 1.1rem;
@@ -1191,25 +804,12 @@ hr{
 }
 
 
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 /* @media screen and (max-width:500px){
 	.carousel-title-container .carousel-title{
 		width:340px;
 	}
 } */
 
-<<<<<<< HEAD
-
-.carousel-title-container .carousel-sub-title{
-	font-weight: 300;
-	font-size: 19px;
-	line-height: 22px;
-	width:500px;
-}
-.my-btn-style{
-	width: 200px;
-	font-weight: bold;
-=======
 .position-relative{
 	margin-bottom:0px !important;
 }
@@ -1224,7 +824,6 @@ hr{
 .my-btn-style{
 	width: 200px;
 	font-weight: bold !important;
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 }
 .carousel-control-prev,.carousel-control-next{
 	z-index: 3;

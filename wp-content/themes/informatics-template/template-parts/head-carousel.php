@@ -10,11 +10,7 @@
                     It’s education with an I.T. factor. The careers of tomorrow are what we prepare you for today. Integrating IT into your discipline will enable you to find your place in a tech-driven world, no matter which industry you choose.
                     </div>
 					<div class='mt-1 text-md-left'>
-<<<<<<< HEAD
-						<button type="button" class="btn btn-informatics-blue no-border my-btn-style mt-3">INQUIRE NOW</button>
-=======
 						<button id="inquire-now" type="button" class="btn btn-informatics-blue no-border my-btn-style mt-3">INQUIRE NOW</button>
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 					</div>
                 </div>
             </div>
@@ -27,15 +23,6 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-<<<<<<< HEAD
-      <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01-02.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01-03-03.jpg" alt="Third slide">
-=======
       <!-- <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01.jpg" alt="First slide"> -->
       <picture class="d-block w-100" >
           <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01-1-e1546250643902.jpg" media="(max-width: 500px)">
@@ -58,7 +45,6 @@
           <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01-03-03-e1545179681990.jpg">
           <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Slider-01-03-03-e1545179681990.jpg" alt="First Slide">
       </picture>
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
     </div>
   </div>
 </div>

@@ -18,20 +18,12 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="/wp-content/themes/informatics-template/informatics.css">
-<<<<<<< HEAD
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="/wp-content/themes/informatics-template/assets/js/informatics.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-	
-=======
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="/wp-content/themes/informatics-template/assets/js/informatics.js"></script>
 	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 	<?php wp_head(); ?>
 </head>
 
@@ -98,11 +90,7 @@
 				</div>
 				<div id="search-icon-wrap-1" style="margin-right:-20px;"><i id="search-icon-1" class="fa fa-search"></i></div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".social-media-collapse" aria-controls="social-media-dropdown" aria-expanded="false" aria-label="Toggle navigation">
-<<<<<<< HEAD
-						<div id="dots-icon-wrap" class="mr-1"><i class="fa fa-ellipsis-h" style="color:#007bff"></i></div>
-=======
 						<div id="dots-icon-wrap" class="mr-md-1 mr-0"><i class="fa fa-ellipsis-h" style="color:#007bff"></i></div>
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 					</button>		
 					 <!-- <div id="dots-icon-wrap" class="pr-3"><i class="fa fa-ellipsis-h" style="color:#007bff"></i></div> -->
 					 <div id="social-media-dropdown" class="collapse social-media-collapse">

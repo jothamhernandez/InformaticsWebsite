@@ -15,28 +15,17 @@ get_header(); ?>
                         </div>
                         <div class="col-md-12 border rounded-top mt-2" v-for="branch in branches">
                             <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch)">
-<<<<<<< HEAD
-                                <div class="col-11">
-                                    {{branch.name}}
-                                </div>
-                                <div class="col-1 text-right">
-=======
                                 <div class="col-md-11 col-10">
                                     {{branch.name}}
                                 </div>
                                 <div class="col-md-1 col-2 text-right">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                      <i class="fa fa-caret-right" :class="[branch.isActive ? 'rotatedown' : 'rotateback']"></i>
                                 </div>
                             </div>
 <!-- 							isActive ? activeClass : ''
 							dropbranch -->
 							<div class="beforedrop" :class="[branch.isActive ? 'dropbranch' : 'upbranch']">
-<<<<<<< HEAD
-								<div class="col-md-12 py-2">
-=======
 								<div class="col-md-12 py-2 px-0">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 									<div class="container">
 										<div class="row">
 											<div class="col-md-6 pt-90">
@@ -67,47 +56,26 @@ get_header(); ?>
 												</h4>
 												<div class="col-md-12 mt-3">
 													<div class="row">
-<<<<<<< HEAD
-														<div class="col-1">
-															<i class="fa fa-map-marker" aria-hidden="true"></i>
-														</div>
-														<div class="col-11">
-=======
 														<div class="col-md-1 col-2">
 															<i class="fa fa-map-marker" aria-hidden="true"></i>
 														</div>
 														<div class="col-md-11 col-10">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 															<p>{{branch.branchaddress}}</p>
 														</div>
 													</div>
 													<div class="row">
-<<<<<<< HEAD
-														<div class="col-1">
-															<i class="fa fa-phone" aria-hidden="true"></i>
-														</div>
-														<div class="col-11">
-=======
 														<div class="col-md-1 col-2">
 															<i class="fa fa-phone" aria-hidden="true"></i>
 														</div>
 														<div class="col-md-11 col-10">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 															<p>{{branch.branchnumber}}</p>
 														</div>
 													</div>
 													<div class="row">
-<<<<<<< HEAD
-														<div class="col-1">
-															<i class="fa fa-envelope" aria-hidden="true"></i> 
-														</div>
-														<div class="col-11">
-=======
 														<div class="col-md-1 col-2">
 															<i class="fa fa-envelope" aria-hidden="true"></i> 
 														</div>
 														<div class="col-md-11 col-10">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 															<p>{{branch.branchemail}}</p>
 														</div>
 													</div>
@@ -145,28 +113,17 @@ get_header(); ?>
                         </div>
                         <div class="col-md-12 border rounded-top mt-2" v-for="branch in institutes">
                             <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch)">
-<<<<<<< HEAD
-                                <div class="col-11">
-                                    {{branch.name}}
-                                </div>
-                                <div class="col-1 text-right">
-=======
                                 <div class="col-md-11 col-10">
                                     {{branch.name}}
                                 </div>
                                 <div class="col-md-1 col-2 text-right">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
                                      <i class="fa fa-caret-right" :class="[branch.isActive ? 'rotatedown' : 'rotateback']"></i>
                                 </div>
                             </div>
 <!-- 							isActive ? activeClass : ''
 							dropbranch -->
 							<div class="beforedrop" :class="[branch.isActive ? 'dropbranch' : 'upbranch']">
-<<<<<<< HEAD
-								<div class="col-md-12 py-2">
-=======
 								<div class="col-md-12 py-2 px-0">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 									<div class="container">
 										<div class="row">
 											<div class="col-md-6 pt-90">
@@ -197,47 +154,26 @@ get_header(); ?>
 												</h4>
 												<div class="col-md-12 mt-3">
 													<div class="row">
-<<<<<<< HEAD
-														<div class="col-1">
-															<i class="fa fa-map-marker" aria-hidden="true"></i>
-														</div>
-														<div class="col-11">
-=======
 														<div class="col-md-1 col-2">
 															<i class="fa fa-map-marker" aria-hidden="true"></i>
 														</div>
 														<div class="col-md-11 col-10">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 															<p>{{branch.branchaddress}}</p>
 														</div>
 													</div>
 													<div class="row">
-<<<<<<< HEAD
-														<div class="col-1">
-															<i class="fa fa-phone" aria-hidden="true"></i>
-														</div>
-														<div class="col-11">
-=======
 														<div class="col-md-1 col-2">
 															<i class="fa fa-phone" aria-hidden="true"></i>
 														</div>
 														<div class="col-md-11 col-10">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 															<p>{{branch.branchnumber}}</p>
 														</div>
 													</div>
 													<div class="row">
-<<<<<<< HEAD
-														<div class="col-1">
-															<i class="fa fa-envelope" aria-hidden="true"></i> 
-														</div>
-														<div class="col-11">
-=======
 														<div class="col-md-1 col-2">
 															<i class="fa fa-envelope" aria-hidden="true"></i> 
 														</div>
 														<div class="col-md-11 col-10">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 															<p>{{branch.branchemail}}</p>
 														</div>
 													</div>
@@ -285,19 +221,11 @@ get_header(); ?>
 							name:'Caloocan',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'380 Rizal Avenue Extension Corner 11th Avenue Grace Park, Metro Manila',
@@ -343,19 +271,11 @@ get_header(); ?>
 							name:'Cebu',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'C.L. Benedicto Bldg. J. De Vera Street Cebu City',
@@ -401,19 +321,11 @@ get_header(); ?>
 							name:'EastWood',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'185 E. Rodriguez Jr. Avenue (C5), Acropolis, Bgy. Bagumbayan, Quezon City',
@@ -461,19 +373,11 @@ get_header(); ?>
 							name:'Cavite',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'Informatics Bldg. E. Aguinaldo Highway, Tanzang Luma V, Imus City, Cavite',
@@ -529,19 +433,11 @@ get_header(); ?>
 							name:'Manila',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'2070 BDO Bldg. Recto Ave Quiapo, Manila',
@@ -583,19 +479,11 @@ get_header(); ?>
 							name:'Northgate',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'Indo China Drive, Northgate Cyberzone Filinvest Corporate City, Alabang Muntinlupa City, Metro Manila',
@@ -636,19 +524,11 @@ get_header(); ?>
 							name:'Baguio',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'3/F Decibar Bldg., #65 Lower Bonifacio St., Baguio City',
@@ -694,19 +574,11 @@ get_header(); ?>
 							name:'Cagayan De Oro',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'2nd level, Stary Bldg. Max Suniel St., Carmen, Cagayan De Oro',
@@ -757,19 +629,11 @@ get_header(); ?>
 							name:'Consolacion',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'MGM Building, North Road Consolacion 6001 Cebu',
@@ -794,19 +658,11 @@ get_header(); ?>
 							name:'Megamall',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'Level 5, Building A Baranggay, Wack Wack Mandaluyong City, Philippines 1550',
@@ -828,19 +684,11 @@ get_header(); ?>
 							name:'Makati',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'Solaris One, 130 Dela Rosa St. Cor., Esteban St. Legaspi Village Upper Ground, Legazpi Village, Makati, 1229 Metro Manila',
@@ -862,19 +710,11 @@ get_header(); ?>
 							name:'Festival Alabang',
 							isActive:false,
 							sliderlinks:[
-<<<<<<< HEAD
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-34.jpg',
-=======
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
 								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 								isActive: false}
 							],
 							branchaddress:'4th Level Festival Supermall, Filinvest Corporate City Alabang, Muntinlupa City',
@@ -907,10 +747,6 @@ get_header(); ?>
 			},
 			methods:{
 				clicked(branch){
-<<<<<<< HEAD
-					branch.isActive = !branch.isActive
-				}
-=======
 					this.unclicked(branch)
 					branch.isActive = !branch.isActive
 				},
@@ -927,7 +763,6 @@ get_header(); ?>
 					})
 				}
 
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 		    }
 		})
 	})();

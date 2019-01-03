@@ -96,11 +96,7 @@
 		</div>
 	</div>
 <div class="scroll-up-button" style="background:rgba(150,150,150,.8); border-radius:100%; padding:2px;">
-<<<<<<< HEAD
 	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
-=======
-	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 </div>
 </footer>
 		<script>
@@ -122,16 +118,6 @@
 					// var child = $('.dropdown');
 					// console.log(child.children()[0].href);
 					$('.btn-admission').click(function(){
-<<<<<<< HEAD
-						$('.dd-admission').animate({height:'0px'})
-						var sibling = $(this).siblings()[1];
-						var height = $(sibling).css('height');
-						if(height != '2px'){
-							$(sibling).animate({height:'0px'})
-						}else{
-							$(sibling).animate({height:'530px'})
-						}
-=======
 						// console.log($($(this).find('.dd-admission')))
 						// $('.dd-admission').animate({height:'0px'})
 						var sibling = $(this).siblings()[1];
@@ -143,7 +129,6 @@
 						// }else{
 						// 	$(sibling).animate({height:'530px'})
 						// }
->>>>>>> c3e2fc33c8e8b6368247ef65c2bc0c345c4e3d12
 					})
 					if ( $(window).width() > 768 ) {
 						$('.dropdown').click(function(){
