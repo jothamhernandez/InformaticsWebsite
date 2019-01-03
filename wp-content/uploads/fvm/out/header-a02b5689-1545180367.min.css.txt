@@ -1,0 +1,13 @@
+PROCESSED on Thu, 03 Jan 2019 03:04:27 +0000
+/wp-content/plugins/contact-form-7/includes/css/styles.css
+/wp-content/themes/informatics-template/assets/css/open-iconic-bootstrap.css
+/wp-content/themes/informatics-template/assets/css/bootstrap.css
+/wp-content/themes/informatics-template/style.css
+/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css
+/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css
+/wp-content/plugins/elementor/assets/lib/animations/animations.min.css
+/wp-content/plugins/elementor/assets/css/frontend.min.css
+/wp-content/uploads/elementor/css/global.css
+/wp-content/uploads/elementor/css/post-366.css
+/wp-content/plugins/kirki/assets/css/kirki-styles.css
+PROCESSED from http://dev.info-website.com/programs/bachelors-degree-programs/bachelor-of-science-in-business-administration/
