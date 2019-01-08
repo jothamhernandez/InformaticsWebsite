@@ -228,6 +228,7 @@ function custom_excerpt_length($length) {
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 
+
 function wpbsearchform( $form ) {
  
     $form = '<form role="search" method="get" class="searchform wp-bootstrap-4-searchform mt-4 mb-3" action="' . home_url( '/' ) . '" >

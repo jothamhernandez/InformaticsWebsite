@@ -18,7 +18,7 @@
 </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="http://dev.info-website.com/wp-content/uploads/2018/09/Slider-02.jpg" alt="First slide">
+      <img class="d-block w-100" src="https://www.informatics-inculab.com/wp-content/uploads/2018/09/Slider-02.jpg" alt="First slide">
     </div>
   </div>
 </div>
