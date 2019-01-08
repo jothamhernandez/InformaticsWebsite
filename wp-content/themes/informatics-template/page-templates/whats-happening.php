@@ -5,9 +5,9 @@
 
 get_header(); ?>
 
-    <div class="container">
+    <div class="container-fluid fluid-2">
         <div class="row">
-            <div class="col-md-8 wp-bp-content-width">
+            <div class="col-md-9 wp-bp-content-width">
                 <div id="primary" class="content-area">
                     <main id="main" class="site-main">
                         <div class="row mt-5">
@@ -23,9 +23,9 @@ get_header(); ?>
 
                              $myposts = new WP_Query(array('posts_per_page'=>9,'paged'=>( get_query_var('paged') ) ? get_query_var('paged') : 1));
                              while ( $myposts->have_posts() ) : $myposts->the_post(); ?>
-                              <article id="post-<?php the_ID(); ?>" <?php post_class( 'nocard col-md-4 col-6' ); ?>>
+                              <article id="post-<?php the_ID(); ?>" <?php post_class( 'nocard col-md-4 col-12' ); ?>>
 								<div class="my-card">
-										<?php echo get_the_post_thumbnail($post_id, 'thumbnail')?>
+										<?php echo get_the_post_thumbnail($post_id, 'medium')?>
 										<h5 class="mt-3 happen-title"><?php the_title();?></h5>
 										<div class="mt-3 mb-1">
 										 <?php the_excerpt();?>
@@ -110,7 +110,7 @@ get_header(); ?>
             </div>
             <!-- /.col-md-8 -->
 
-            <div class="col-md-4 wp-bp-sidebar-width">
+            <div class="col-md-3 wp-bp-sidebar-width">
                 <?php get_sidebar(); ?>
             </div>
             <!-- /.col-md-4 -->

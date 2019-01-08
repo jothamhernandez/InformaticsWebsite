@@ -146,6 +146,17 @@ add_action( 'widgets_init', 'wp_bootstrap_4_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wp_bootstrap_4_scripts() {
+	wp_register_style('font-awesome-all','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+	wp_enqueue_style('font-awesome-all');
+	wp_register_style('informatics-css',get_template_directory_uri().'/informatics.css');
+	wp_enqueue_style('informatics-css');
+	// wp_register_script('vue-script','https://cdn.jsdelivr.net/npm/vue');
+	// wp_enqueue_script('vue-script');
+	wp_register_script('scroll-reveal','https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js');
+	wp_enqueue_script('scroll-reveal');
+	// wp_register_script('informatics-js',get_template_directory_uri().'/assets/js/informatics.js',[],'',true);
+	// wp_enqueue_script('informatics-js');
+
 	wp_enqueue_style( 'open-iconic-bootstrap', get_template_directory_uri() . '/assets/css/open-iconic-bootstrap.css', array(), 'v4.0.0', 'all' );
 	wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), 'v4.0.0', 'all' );
 	wp_enqueue_style( 'wp-bootstrap-4-style', get_stylesheet_uri(), array(), '1.0.2', 'all' );

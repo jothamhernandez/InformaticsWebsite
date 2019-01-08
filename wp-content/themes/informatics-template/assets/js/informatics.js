@@ -16,12 +16,12 @@
 		mounted() {
 			$ = jQuery;
 			this.content = $('#slider-content')[0];
-			this.dots = Math.ceil($('#slider-content')[0].scrollWidth / $('#slider-content').width());
+			this.dots = Math.ceil(($('#slider-content')[0].scrollWidth / ($('#slider-content').width())-.1));
+			console.log( $('#slider-content')[0].scrollWidth / $('#slider-content').width());
 			// this.intervalId = setInterval(this.interval, this.sliderSpeed);
 		},
 		methods: {
 			getDotColor(dot){
-				console.log(dot);
 				if(this.currentSlide == dot){
 					return "#cccccc"
 				} else {
@@ -62,17 +62,18 @@
 			}
 		},
 		template:
-		`<div id="slider-container">
-<div id="slider-content" class="d-flex align-items-center justify-content-start flex-nowrap" style="overflow:hidden">
-<div v-for="item in items" v-if="item" class="col-md-4 text-center flex-shrink-0">
-<img :src="item.link" class="img-fluid">
-</div>   
-</div>
-<div class="dots d-flex align-items-center justify-content-center">
-<div class="mx-2" v-bind:style="{'background-color': getDotColor(dot) }" style="width: 10px; height: 10px; border-radius: 50%; cursor:pointer;" v-for="(dot, value) in dots" @click="changeSlide" :data-slide="dot" @mouseover="hover('in')" @mouseout="hover('out')"></div>
-</div>
-</div>
-
+		`
+		<div id="slider-container">
+			<div id="slider-content" class="d-flex align-items-center justify-content-start flex-nowrap" style="overflow:hidden">
+				<div v-for="item in items" v-if="item" class="col-md-4 text-center flex-shrink-0">
+					<img :src="item.link" class="img-fluid">
+				</div>   
+				</div>
+					<div class="dots d-flex align-items-center justify-content-center">
+				<div class="mx-2" v-bind:style="{'background-color': getDotColor(dot) }" style="width: 10px; height: 10px; border-radius: 50%; cursor:pointer;" v-for="(dot, value) in dots" @click="changeSlide" :data-slide="dot" @mouseover="hover('in')" @mouseout="hover('out')">
+				</div>
+			</div>
+		</div>
 `
 	});
 })();

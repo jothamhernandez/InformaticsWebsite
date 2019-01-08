@@ -1,7 +1,7 @@
 <div class="section-container-holder" id="whats-happening">
                 <div class="section-container">
                     <div class="content py-5">
-                        <div class="container">
+                        <div class="container-fluid fluid-2">
                             <div class="row">
                                 <div class="col-md-12 text-center text-md-left">
                                     <h1 class="text-uppercase">What's Happening?</h1>
@@ -10,13 +10,12 @@
                                     <div class="row">
 
 
-                                        <article class="col-md-4 mt-5 mt-md-3">
+                                        <article class="col-md-4 mt-5 mt-md-3 px-md-5">
                                             <div class="post-entry" >
                                                 <!-- <img class="img-fluid" alt="ASEAN Competition" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg"> -->
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg" media="(max-width: 500px)">
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg" alt="First Slide">
+                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg">
+                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg" alt="First Slide">
                                             </picture>
                                             </div>
                                             <div class="content-title mt-3">
@@ -38,12 +37,11 @@
                                             </div>
 
                                         </article>
-                                        <article class="col-md-4 mt-5 mt-md-3">
+                                        <article class="col-md-4 mt-5 mt-md-3 px-md-5">
                                             <div class="post-entry">
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg" media="(max-width: 500px)">
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2018/12/Article-2-e1545179133584.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-2-e1545179133584.jpg" alt="First Slide">
+                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg">
+                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg" alt="First Slide">
                                             </picture>
                                             </div>
                                             <div class="content-title mt-3">
@@ -62,13 +60,12 @@
                                             </div>
 
                                         </article>
-                                        <article class="col-md-4 mt-5 mt-md-3">
+                                        <article class="col-md-4 mt-5 mt-md-3 px-md-5">
                                         <div class="post-entry">
                                             <!-- <img class="img-fluid" alt="ASEAN Competition" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg"> -->
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg" media="(max-width: 500px)">
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg" alt="First Slide">
+                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg">
+                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg" alt="First Slide">
                                             </picture>
                                         </div>
                                             <div class="content-title mt-3">

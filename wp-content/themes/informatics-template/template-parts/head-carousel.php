@@ -1,4 +1,4 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide head-carousel" data-ride="carousel">
     <div class="carousel-title-container">
         <div class="container-fluid pt-md-3">
             <div class="row">

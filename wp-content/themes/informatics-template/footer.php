@@ -104,6 +104,7 @@
 				jQuery('#content').offset({top: jQuery("#masthead").height()});
 				var $ = jQuery;
 				$(document).ready(function() {
+					
 					$(".scroll-up-button").click(function() {
 					  $("html, body").animate({ scrollTop: 0 },1500);
 					  return false;
@@ -130,11 +131,17 @@
 						// 	$(sibling).animate({height:'530px'})
 						// }
 					})
+
 					if ( $(window).width() > 768 ) {
+						$('html,body').animate({scrollTop:$('.carousel').height()},1500);
 						$('.dropdown').click(function(){
 							document.location.href =$(this).children()[0].href;
 						})
 					} // This will simulate a resize to trigger the initial run.
+
+					
+
+
 					$('[data-action=link]').on('click', function(){
 						window.location = $(this).data('link');
 					});

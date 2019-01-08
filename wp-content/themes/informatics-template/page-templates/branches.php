@@ -221,11 +221,11 @@ get_header(); ?>
 							name:'Caloocan',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'380 Rizal Avenue Extension Corner 11th Avenue Grace Park, Metro Manila',
@@ -271,11 +271,11 @@ get_header(); ?>
 							name:'Cebu',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/cebu.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/cebu.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/cebu.jpg',
 								isActive: false}
 							],
 							branchaddress:'C.L. Benedicto Bldg. J. De Vera Street Cebu City',
@@ -321,11 +321,11 @@ get_header(); ?>
 							name:'EastWood',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/eastwood.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/eastwood.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/eastwood.jpg',
 								isActive: false}
 							],
 							branchaddress:'185 E. Rodriguez Jr. Avenue (C5), Acropolis, Bgy. Bagumbayan, Quezon City',
@@ -373,11 +373,11 @@ get_header(); ?>
 							name:'Cavite',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/cavite.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/cavite.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/cavite.jpg',
 								isActive: false}
 							],
 							branchaddress:'Informatics Bldg. E. Aguinaldo Highway, Tanzang Luma V, Imus City, Cavite',
@@ -524,11 +524,11 @@ get_header(); ?>
 							name:'Baguio',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/baguio.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/baguio.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/baguio.jpg',
 								isActive: false}
 							],
 							branchaddress:'3/F Decibar Bldg., #65 Lower Bonifacio St., Baguio City',

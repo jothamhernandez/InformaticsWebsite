@@ -2,8 +2,35 @@
 	visibility: hidden;
 } */
 
+/* .container-fluid{
+	width: 82% !important;
+} */
+
+.fa-chevron-2-right,.fa-chevron-2-left{
+	color:#cacaca;
+	font-size: 1.4em;
+	background: #f1f1f1;
+	padding: 10px 15px;
+	border-radius: 100%;
+	cursor:pointer;
+}
+/* .arrow-container-slider{
+	padding: 5px;
+	border-radius: 100%;
+} */
 
 
+.fluid-2{
+	width: 82% !important;
+}
+
+.senior-high-titles{
+	font-weight: bold;
+}
+
+.content-area{
+	margin-right:23px;
+}
 
 .faq-list a{
 	font-size:15px;
@@ -31,6 +58,15 @@
 		padding:40px 40px;
 		margin-top:-110px;
 	}
+	.fluid-2{
+		width: 90% !important;
+	}
+	.content-area{
+		margin-right: 0px;
+	}
+	.corporate-dropdown ul{
+		padding-left: 30px !important;
+	}
 }
 
 .dd-admission{
@@ -47,6 +83,11 @@ header .carousel-inner{
 }
 #whats-happening .post-entry{
 	height:240px !important;
+	overflow: hidden;
+}
+
+.head-carousel .carousel-item{
+	height: 41vw;
 	overflow: hidden;
 }
 
@@ -160,9 +201,22 @@ header .carousel-inner{
 	}
 }
 
+.sub-tables{
+	display: none;
+}
+.main-table{
+	display: block;
+}
+
 @media screen and (max-width:568px){
 	.entry-header h1{
-		font-size:27px !important;
+		font-size:24px !important;
+	}
+	.sub-tables{
+		display: block;
+	}
+	.main-table{
+		display: none;
 	}
 }
 
@@ -173,23 +227,34 @@ header .carousel-inner{
 	font-size:13px;
 }
 
-#BSITTable{
+.BSITTable{
 	border:2px solid #dee2e6;
 }
-#BSITTable th{
+.BSITTable th{
 	border:2px solid #dee2e6;
 }
 
-#BSITTable .table-head{
+.BSITTable .table-head{
 	color:#8b8b8b;
 	background:#dee2e6;
 	text-align:center;
 	vertical-align:middle;
 }
 
+.BSITTable thead th{
+	vertical-align: middle !important;
+}
+
 #secondary{
+	margin:6em 0px;
 	border:none !important;
 	background:transparent !important;
+}
+
+@media screen and (max-width:500px){
+	#secondary{
+		margin-top: 3em;
+	}
 }
 
 #secondary #archives-2{
@@ -334,9 +399,21 @@ header form{
 	width:100px;
 	margin: auto;
 }
-.table .thead-dark th:first-child{
-	background: transparent !important;
+.table-admission-sub .thead-dark th{
+	background: black !important;
+}
+
+.table-admission .thead-dark th:first-child{
+	background: transparent;
 	border: none
+}
+
+.table-admission-main{
+	display: block;
+}
+
+.table-admission-sub{
+	display: none;
 }
 
 @media screen and (min-width:577px){	
@@ -345,13 +422,25 @@ header form{
 	}
 }
 
-#table-admission th{
+
+
+.table-admission th{
 	border-top: none !important;
+	font-size:1.02em;
+	text-align: right;
 }
 .table td{
 	border:1px solid #dee2e6;
+	font-size:1.02em;
 }
-
+@media screen and (max-width:500px){
+	.table-admission th{
+		font-size:.6em;
+	}
+	.table td{
+		font-size:.6em;
+	}
+}
 
 /* Bg Color Grey */
 .bg-gray{
@@ -362,18 +451,29 @@ header form{
 .dropdown-menu{
 	margin:0px !important;
 	padding:0px !important;
-	width: 300px !important;
+	width: 346px !important;
 }
 
 @media screen and (max-width:768px){
 	.dropdown-menu{
 		width: 100% !important;
 	}
+	.table-admission-main{
+		display: none;
+	}
+	
+	.table-admission-sub{
+		display: block;
+	}
 }
 
 .dropdown-menu li{
 	background-color: #1C9CD8;
-	text-align: center;
+	text-align: left;
+	text-transform: uppercase;
+}
+.dropdown-menu li a{
+	line-height: 25px;
 }
 .dropdown-menu li:hover{
 	background-color: white;
@@ -449,7 +549,7 @@ header form{
 	font-size: 14px;
 }
 .senior-high-list-p{
-	font-size: 14px;
+	font-size: 16px;
 }
 
 
@@ -634,7 +734,7 @@ hr{
 
 
 .my-card{
-	height:305px;
+	height:382px;
 	overflow: hidden;
 	margin-bottom: 23px;
 }
@@ -648,13 +748,13 @@ hr{
 }
 
 .nocard img{
-	height:150px;
+	height:250px;
 	width:100%;
 }
 
 /* Posts */
 .content-title{
-	height:120px;
+	height:88px;
 	overflow: hidden;
 }
 .content-title h4{
@@ -1019,6 +1119,23 @@ footer .link-content ul > li a:hover {
 
 .bg-blue {
 	background-color: #1C9CD8;
+}
+
+.img-circle-container{
+	width: 200px;
+	height: 200px;
+	border:9px solid #f5f5f5;
+	border-radius: 100%;
+	margin:40px auto 20px auto;
+}
+.testimonial-container-parent:hover{
+	background: #007bff;
+	color: white;
+}
+.testimonial-container-parent{
+	background: white;
+	transition: .3s all linear;
+	cursor: pointer;
 }
 
 

@@ -14,8 +14,8 @@ get_header(); ?>
                                         alt="" class="img-fluid w-100" style="height:100%;">
                                 </div>
                                 <div class="col-md-6 m-0 p-0 bg-orange" style="color:white;">
-                                    <div class="p-md-5 p-3 up-anim">
-                                        <h1 class="text-uppercase">informatics at a glance</h1>
+                                    <div class="p-5 up-anim">
+                                        <h1 class="text-uppercase text-center text-md-left">informatics at a glance</h1>
                                         <p>From its humble beginning as a premiere IT training institution founded in
                                             1993, Informatics Philippines has successfully penetrated the academic
                                             industry as a premiere educational institution offering degree and diploma
@@ -66,8 +66,8 @@ get_header(); ?>
                         <div class="container-fluid">
                             <div class="row d-flex align-items-stretch justify-content-between">
                                 <div class="col-md-6 m-0 p-md-5 p-0 bg-orange">
-                                    <div class="p-md-5 p-3">
-                                        <h1 class="text-uppercase white">Milestones</h1>
+                                    <div class="p-5">
+                                        <h1 class="text-uppercase white text-center text-md-left">Milestones</h1>
                                         <div class="up-anim">
                                             <p class="white"><strong style="display: block; margin: 0px !important;">1983</strong>The
                                                 Informatics Group is established in Singapore.
@@ -103,8 +103,8 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <div class="col-md-6 m-0 p-md-5 p-0 bg-blue justify-content-between">
-                                    <div class="p-md-5 p-3">
-                                        <h1 class="text-uppercase white">Core Values</h1>
+                                    <div class="p-5">
+                                        <h1 class="text-uppercase white text-center text-md-left">Core Values</h1>
                                         <div class="up-anim">
                                             <p class="white"><strong style="display: block; margin: 0px !important;">Student Centric</strong>We
                                                 focus in understanding our students and putting them first in
@@ -182,7 +182,7 @@ get_header(); ?>
                                     </div>
                                     <div class="col-md-6 m-0 p-md-5">
                                         <div class="p-md-5 p-3 up-anim">
-                                            <h1 class="text-uppercase">About the President</h1>
+                                            <h1 class="text-uppercase text-center text-md-left">About the President</h1>
                                             <p><strong>Leonardo Riingen</strong> is entrepreneur who has already contributed immensely to improving information technology (IT) training and education in the Philippines. </p>
                                             <p>Riingen came up with the idea that an Information Technology training should be made available to people. When you think of Informatics, "the computer school in the mall ", Riingen is the man behind it. That is the innovative and creative, if not a proactive way of making business and fulfilling his dream of making IT accessible to the people. </p>
                                             <p>Utilizing his education in U.K., he applied the ladderized program in IT, patterned after the British education system, to allow students to learn skills and make them immediately employable. Also, he designed and customized IT training programs and curriculum for companies and government offices to give learners a comprehensive, organization-wide IT training. To make the IT education and training that his schools offer at par with international standards, his schools boast of international courses validated by the world's leading IT qualification awarding bodies; and maintains affiliations with IT industry technology frontrunners.</p>
