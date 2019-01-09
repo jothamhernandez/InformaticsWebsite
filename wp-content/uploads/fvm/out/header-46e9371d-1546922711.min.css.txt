@@ -6,7 +6,7 @@ PROCESSED on Tue, 08 Jan 2019 04:45:15 +0000
 /wp-content/plugins/wordpress-seo/css/dist/adminbar-910.min.css
 /wp-content/plugins/kirki/assets/css/kirki-styles.css
 <<<<<<< HEAD:wp-content/uploads/fvm/out/header-46e9371d-1546922711.min.css.txt
-PROCESSED from http://dev.info-website.com/admissions/admission-policies-procedures/
+PROCESSED from https://www.informatics-inculab.com/admissions/admission-policies-procedures/
 =======
 PROCESSED from https://www.informatics-inculab.com/
 >>>>>>> 30afe1d821471613775fce78b679cdd1ac09e853:wp-content/uploads/fvm/out/header-35e93d60-1545180367.min.css.txt
