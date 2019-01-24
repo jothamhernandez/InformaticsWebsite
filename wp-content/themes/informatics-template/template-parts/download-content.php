@@ -4,9 +4,9 @@
             <div class="container">
             <div class="back-white"></div>
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-informatics-blue btn-lg font-weight-bold" onclick="window.open('https://www.informatics-inculab.com/admissions/download-application-form/')">DOWNLOAD APPLICATION FORM</button>
-                    <button type="button" class="btn btn-informatics-blue btn-lg mt-3 mt-sm-0 font-weight-bold">APPLY ONLINE</button>
+                    <div class="col-md-12 text-center p-md-5">
+                        <button type="button" class="btn btn-informatics-blue downloads-btn btn-lg font-weight-bold mr-md-5" onclick="window.open('/admissions/download-application-form/')">DOWNLOAD APPLICATION FORM</button>
+                    <button type="button" class="btn btn-informatics-blue downloads-btn btn-lg mt-3 ml-md-2 mt-sm-0 font-weight-bold" onclick=" window.open('https://system.informatics-inculab.com/online-application','_blank')">APPLY ONLINE</button>
 					</div>
                 </div>
              </div>

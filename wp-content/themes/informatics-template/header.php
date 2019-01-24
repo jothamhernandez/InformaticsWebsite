@@ -21,8 +21,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="/wp-content/themes/informatics-template/assets/js/informatics.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+	<!-- <script src="/wp-content/themes/informatics-template/assets/js/informatics.js"></script> -->
 	<!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
 	<?php wp_head(); ?>
 </head>
@@ -157,7 +157,7 @@
 		<div class="section-container">
 			<div class="content">
 				<div class="container-fluid fluid-2">
-					<div class="col-md-12 d-flex align-items-center justify-content-center">
+					<div class="col-md-12 d-flex align-items-center justify-content-center p-0">
 						<?php 
 	                     if(get_the_title()=="Bachelor of Science in Accounting Information System"){
 							 echo "<h3 class='m-0 p-0 float-left flex-grow-1'>" . "Bachelor's Degreee Program" . "</h3>";

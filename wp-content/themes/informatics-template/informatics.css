@@ -6,6 +6,23 @@
 	width: 82% !important;
 } */
 
+.program-contact-form{
+	display: none;
+}
+
+.on-develop-container{
+	text-align: center;
+}
+#FAQ-container,#FAQ-search{
+	display: none;
+}
+
+.downloads-btn{
+	font-size:2.25em !important;
+}
+.p-in-branches p{
+	margin:0px !important;
+}
 .fa-chevron-2-right,.fa-chevron-2-left{
 	color:#cacaca;
 	font-size: 1.4em;
@@ -14,12 +31,11 @@
 	border-radius: 100%;
 	cursor:pointer;
 }
-/* .arrow-container-slider{
-	padding: 5px;
-	border-radius: 100%;
-} */
 
 
+.program-sidebar{
+	padding-top:5em;
+}
 .fluid-2{
 	width: 82% !important;
 }
@@ -66,6 +82,9 @@
 	}
 	.corporate-dropdown ul{
 		padding-left: 30px !important;
+	}
+	.wp-bp-sidebar-width{
+		padding-top:2em;
 	}
 }
 
@@ -202,6 +221,9 @@ header .carousel-inner{
 
 .sub-tables{
 	display: none;
+}
+.sub-tables td{
+	font-size: .8em !important;
 }
 .main-table{
 	display: block;
@@ -515,19 +537,19 @@ header form{
     text-transform: uppercase;
 }
 .my-admission-image{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-19-1.jpg') no-repeat center center;
+	background: url('http://dev.info-website.com/wp-content/uploads/2018/09/Info-Website-19-1.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .bg-admission{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center;
+	background: url('http://dev.info-website.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 
 /* Diploma Course */
 .my-diploma-image{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/11/Info-Website-38.jpg') no-repeat center center;
+	background: url('http://dev.info-website.com/wp-content/uploads/2018/11/Info-Website-38.jpg') no-repeat center center;
 	background-size: cover;
 }
 .diploma-course-p{
@@ -881,9 +903,6 @@ hr{
 		padding:10px;
 	}
 	
-	.btn-informatics-blue{
-		font-size:.9rem !important;
-	}
 	#dots-icon-wrap{
 		margin:0px;
 	}
@@ -904,11 +923,11 @@ hr{
 }
 
 
-/* @media screen and (max-width:500px){
-	.carousel-title-container .carousel-title{
-		width:340px;
+@media screen and (max-width:750px){
+	.btn-informatics-blue{
+		font-size:.9rem !important;
 	}
-} */
+}
 
 .position-relative{
 	margin-bottom:0px !important;
@@ -931,6 +950,9 @@ hr{
 
 /* Primary Menu */
 
+nav{
+	text-transform: uppercase !important;
+}
 
 #site-sub-navigation {
 	background-color: rgba(28,156,216,.5);
@@ -1015,12 +1037,12 @@ hr{
 }
 
 .bg-northgate{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-01-e1545009903960.jpg') no-repeat center center fixed; background-size:cover;
+	background: url('http://dev.info-website.com/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
 }
 
 @media screen and (max-width:500px){
 	.bg-northgate{
-		background: url('https://www.informatics-inculab.com/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
+		background: url('http://dev.info-website.com/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
 	}
 }
 

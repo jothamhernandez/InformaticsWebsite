@@ -13,8 +13,8 @@ get_header(); ?>
                         <div class="col-md-12">
                             <h2 class="my-title mt-5 mb-5">COLLEGES</h2>
                         </div>
-                        <div class="col-md-12 border rounded-top mt-2" v-for="branch in branches">
-                            <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch)">
+                        <div class="col-md-12 border rounded-top mt-2" v-for="(branch,index) in branches">
+                            <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch,$event,index)" ref="branches">
                                 <div class="col-md-11 col-10">
                                     {{branch.name}}
                                 </div>
@@ -24,9 +24,9 @@ get_header(); ?>
                             </div>
 <!-- 							isActive ? activeClass : ''
 							dropbranch -->
-							<div class="beforedrop" :class="[branch.isActive ? 'dropbranch' : 'upbranch']">
-								<div class="col-md-12 py-2 px-0">
-									<div class="container">
+							<div class="beforedrop">
+								<div class="col-md-12 py-2 px-0 dropdown-height">
+									<div class="container pb-3">
 										<div class="row">
 											<div class="col-md-6 pt-90">
 												<div :id="'branch-car-'+branch.id" class="carousel slide" data-ride="carousel">
@@ -50,11 +50,11 @@ get_header(); ?>
 												  </a>
 												</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-6 p-in-branches">
 												<h4 class="mt-3">
 													{{branch.name}}
 												</h4>
-												<div class="col-md-12 mt-3">
+												<div class="col-md-12 mt-3 mt-md-0">
 													<div class="row">
 														<div class="col-md-1 col-2">
 															<i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -93,11 +93,22 @@ get_header(); ?>
                                                         </div>
 													</div>
 												</div>
-												<div class="col-md-12 mt-3">
-													<div class="row flex-column flex-md-row">
-														<button class="btn btn-primary ml-md-3" type="submit">Download Application Form</button>
-														<span class="align-middle py-2 mx-2 text-center">or</span>
-														<button class="btn btn-primary" type="submit">Apply Online</button>
+												<div class="col-md-12">
+													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
+													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
+													<?php echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); ?>
+												</div>
+												<div class="col-md-12 mb-3">
+													<div class="row text-center">
+														<div class="col-md-7">
+															<button class="btn btn-block btn-primary" type="submit">Download Application Form</button>
+														</div>
+														<div class="col-md-1">
+															<span class="align-middle py-2 text-center">or</span>
+														</div>
+														<div class="col-md-4">
+															<button class="btn btn-block btn-primary" type="submit">Apply Online</button>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -111,8 +122,8 @@ get_header(); ?>
                         <div class="col-md-12">
                             <h2 class="my-title mt-5 mb-5">INSTITUTES</h2>
                         </div>
-                        <div class="col-md-12 border rounded-top mt-2" v-for="branch in institutes">
-                            <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch)">
+                        <div class="col-md-12 border rounded-top mt-2" v-for="(branch,index) in institutes">
+                            <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clickedInstitute(branch,index)">
                                 <div class="col-md-11 col-10">
                                     {{branch.name}}
                                 </div>
@@ -122,8 +133,8 @@ get_header(); ?>
                             </div>
 <!-- 							isActive ? activeClass : ''
 							dropbranch -->
-							<div class="beforedrop" :class="[branch.isActive ? 'dropbranch' : 'upbranch']">
-								<div class="col-md-12 py-2 px-0">
+							<div class="beforedrop">
+								<div class="col-md-12 py-2 px-0 dropdown-height">
 									<div class="container">
 										<div class="row">
 											<div class="col-md-6 pt-90">
@@ -148,7 +159,7 @@ get_header(); ?>
 												  </a>
 												</div>
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-6 p-in-branches">
 												<h4 class="mt-3">
 													{{branch.name}}
 												</h4>
@@ -215,11 +226,15 @@ get_header(); ?>
 			el:'#branch-vue',
 			data(){
 				return {
+					offsets:[],
+					sizes:[],
+					branched:'',
 					branches:[
 						{
 							id:1,
 							name:'Caloocan',
 							isActive:false,
+							height:'',
 							sliderlinks:[
 								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: true},
@@ -318,7 +333,7 @@ get_header(); ?>
 						},
 						{
 							id:3,
-							name:'EastWood',
+							name:'Eastwood',
 							isActive:false,
 							sliderlinks:[
 								{link:'http://dev.info-website.com/wp-content/uploads/2019/01/eastwood.jpg',
@@ -433,11 +448,11 @@ get_header(); ?>
 							name:'Manila',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'2070 BDO Bldg. Recto Ave Quiapo, Manila',
@@ -479,11 +494,11 @@ get_header(); ?>
 							name:'Northgate',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'Indo China Drive, Northgate Cyberzone Filinvest Corporate City, Alabang Muntinlupa City, Metro Manila',
@@ -574,11 +589,11 @@ get_header(); ?>
 							name:'Cagayan De Oro',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'2nd level, Stary Bldg. Max Suniel St., Carmen, Cagayan De Oro',
@@ -629,11 +644,11 @@ get_header(); ?>
 							name:'Consolacion',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'MGM Building, North Road Consolacion 6001 Cebu',
@@ -658,11 +673,11 @@ get_header(); ?>
 							name:'Megamall',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'Level 5, Building A Baranggay, Wack Wack Mandaluyong City, Philippines 1550',
@@ -681,40 +696,14 @@ get_header(); ?>
 						},
 						{
 							id:11,
-							name:'Makati',
-							isActive:false,
-							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
-								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
-								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
-								isActive: false}
-							],
-							branchaddress:'Solaris One, 130 Dela Rosa St. Cor., Esteban St. Legaspi Village Upper Ground, Legazpi Village, Makati, 1229 Metro Manila',
-							branchnumber:'(02) 635-3608 / (02) 635-3615',
-							branchemail:'info.makati@informatics.com.ph',
-							programs:[
-								{
-                                    
-                                            name:'Corporate Learning Courses'
-										},
-										 {
-                                            name:'Short Courses'
-										
-                                }
-							]
-						},
-						{
-							id:12,
 							name:'Festival Alabang',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'4th Level Festival Supermall, Filinvest Corporate City Alabang, Muntinlupa City',
@@ -745,12 +734,48 @@ get_header(); ?>
 					]
 				}
 			},
+			 mounted() {
+				var $ = jQuery
+				 var self = this;
+				 for(var i = 0; i<$('.cursor-pointer').length; i++){
+					this.offsets[i] = $($('.cursor-pointer')[i]).offset().top;
+				 }
+				 for(var i = 0; i<$('.dropdown-height').length; i++){
+					this.sizes[i] = $('.dropdown-height')[i].clientHeight;
+				 }
+			 },
 			methods:{
-				clicked(branch){
+				clicked(branch,event,index){
+					var $ = jQuery
+					
+					if(this.branched != branch){
+						this.branched = branch;
+						this.unclicked(branch)
+						$($('.beforedrop')[index]).css({height:this.sizes[index]})
+						$('html,body').animate({scrollTop:this.offsets[index] - 50})
+					}else{
+						this.branched = '';
+						this.unclicked(branch)
+					}
+					branch.isActive = !branch.isActives
+				},
+				clickedInstitute(branch,index){
+					var $ = jQuery
+					
+					if(this.branched != branch){
+					this.branched = branch;
 					this.unclicked(branch)
-					branch.isActive = !branch.isActive
+					$($('.beforedrop')[index+6]).css({height:this.sizes[index+6]})
+					$('html,body').animate({scrollTop:this.offsets[index+6] - 50})
+					}else{
+						this.branched = '';
+						this.unclicked(branch)
+					}
+					branch.isActive = !branch.isActives
 				},
 				unclicked(bran){
+					var $ = jQuery
+					$('.beforedrop').css({height:'0px'});
 					this.branches.forEach(branch=>{
 						if(branch!=bran){
 							branch.isActive = false;

@@ -1,7 +1,0 @@
-PROCESSED on Mon, 17 Dec 2018 07:57:08 +0000
-/wp-content/plugins/contact-form-7/includes/css/styles.css
-/wp-content/themes/informatics-template/assets/css/open-iconic-bootstrap.css
-/wp-content/themes/informatics-template/assets/css/bootstrap.css
-/wp-content/themes/informatics-template/style.css
-/wp-content/plugins/kirki/assets/css/kirki-styles.css
-PROCESSED from https://www.informatics-inculab.com/

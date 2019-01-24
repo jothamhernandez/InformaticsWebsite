@@ -1,0 +1,8 @@
+PROCESSED on Tue, 15 Jan 2019 23:46:52 +0000
+/wp-content/themes/informatics-template/informatics.css
+/wp-content/themes/informatics-template/assets/css/open-iconic-bootstrap.css
+/wp-content/themes/informatics-template/assets/css/bootstrap.css
+/wp-content/themes/informatics-template/style.css
+/wp-content/plugins/wordpress-seo/css/dist/adminbar-910.min.css
+/wp-content/plugins/kirki/assets/css/kirki-styles.css
+PROCESSED from http://dev.info-website.com/programs/bachelors-degree-programs/

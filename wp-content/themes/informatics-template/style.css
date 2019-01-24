@@ -128,8 +128,14 @@ table { margin: 0 0 1.5em; width: 100%; }
 	}
 }
 
-.dropbranch{
-	height:100%;
+/* .dropbranch{
+	height:650px;
+} */
+
+@media screen and (max-width:500px){
+	.dropbranch{
+		height:1200px;
+	}
 }
 /* .upbranch{
 	animation: backtotop .6s ease-in-out forwards;

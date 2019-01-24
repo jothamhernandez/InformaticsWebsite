@@ -150,8 +150,10 @@ function wp_bootstrap_4_scripts() {
 	wp_enqueue_style('font-awesome-all');
 	wp_register_style('informatics-css',get_template_directory_uri().'/informatics.css');
 	wp_enqueue_style('informatics-css');
-	// wp_register_script('vue-script','https://cdn.jsdelivr.net/npm/vue');
-	// wp_enqueue_script('vue-script');
+	wp_register_script('vue-script','https://cdn.jsdelivr.net/npm/vue');
+	wp_enqueue_script('vue-script');
+	wp_register_script('info-js','/wp-content/themes/informatics-template/assets/js/informatics.js');
+	wp_enqueue_script('info-js');
 	wp_register_script('scroll-reveal','https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js');
 	wp_enqueue_script('scroll-reveal');
 	// wp_register_script('informatics-js',get_template_directory_uri().'/assets/js/informatics.js',[],'',true);

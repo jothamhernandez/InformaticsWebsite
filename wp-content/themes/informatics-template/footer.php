@@ -96,7 +96,7 @@
 		</div>
 	</div>
 <div class="scroll-up-button" style="background:rgba(150,150,150,.8); border-radius:100%; padding:2px;">
-	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
+	<img src="http://dev.info-website.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
 </div>
 </footer>
 		<script>
@@ -104,7 +104,9 @@
 				jQuery('#content').offset({top: jQuery("#masthead").height()});
 				var $ = jQuery;
 				$(document).ready(function() {
-					
+					$('#programs-btn').click(()=>{
+						$('.program-contact-form').slideToggle()
+					})
 					$(".scroll-up-button").click(function() {
 					  $("html, body").animate({ scrollTop: 0 },1500);
 					  return false;
@@ -116,30 +118,21 @@
 							$('.scroll-up-button').fadeOut();
 						}
 					})
-					// var child = $('.dropdown');
-					// console.log(child.children()[0].href);
 					$('.btn-admission').click(function(){
-						// console.log($($(this).find('.dd-admission')))
-						// $('.dd-admission').animate({height:'0px'})
 						var sibling = $(this).siblings()[1];
 						$('.dd-admission').not(sibling).slideUp();
 						$(sibling).slideToggle();
-						// var height = $(sibling).css('height');
-						// if(height != '2px'){
-						// 	$(sibling).animate({height:'0px'})
-						// }else{
-						// 	$(sibling).animate({height:'530px'})
-						// }
 					})
-
 					if ( $(window).width() > 768 ) {
-						$('html,body').animate({scrollTop:$('.carousel').height()},1500);
+						if(window.location.origin + '/' != window.location.href){
+							$('html,body').animate({scrollTop:$('.carousel').height()},1500);
+						}
 						$('.dropdown').click(function(){
 							document.location.href =$(this).children()[0].href;
 						})
 					} // This will simulate a resize to trigger the initial run.
 
-					
+					$($('#programs-container').parent()).parent().css({margin:'0px'});
 
 
 					$('[data-action=link]').on('click', function(){
