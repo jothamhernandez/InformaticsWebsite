@@ -62,10 +62,10 @@ get_header(); ?>
 
                                         <article class="col-md-4 mt-5 mt-md-3 px-md-5">
                                             <div class="post-entry" >
-                                                <!-- <img class="img-fluid" alt="ASEAN Competition" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-3.jpg"> -->
+                                                <!-- <img class="img-fluid" alt="ASEAN Competition" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-3.jpg"> -->
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg" alt="First Slide">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg">
+                                                <img class="d-block w-100 img-fluid" src="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-3-e1546480819728.jpg" alt="First Slide">
                                             </picture>
                                             </div>
                                             <div class="content-title mt-3">
@@ -90,8 +90,8 @@ get_header(); ?>
                                         <article class="col-md-4 mt-5 mt-md-3 px-md-5">
                                             <div class="post-entry">
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg" alt="First Slide">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg">
+                                                <img class="d-block w-100 img-fluid" src="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-2-e1546480895882.jpg" alt="First Slide">
                                             </picture>
                                             </div>
                                             <div class="content-title mt-3">
@@ -112,10 +112,10 @@ get_header(); ?>
                                         </article>
                                         <article class="col-md-4 mt-5 mt-md-3 px-md-5">
                                         <div class="post-entry">
-                                            <!-- <img class="img-fluid" alt="ASEAN Competition" src="http://dev.info-website.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg"> -->
+                                            <!-- <img class="img-fluid" alt="ASEAN Competition" src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/Article-1-e1545179122199.jpg"> -->
                                             <picture class="d-block w-100 img-fluid" >
-                                                <source srcset="http://dev.info-website.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg">
-                                                <img class="d-block w-100 img-fluid" src="http://dev.info-website.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg" alt="First Slide">
+                                                <source srcset="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg">
+                                                <img class="d-block w-100 img-fluid" src="https://www.informatics-inculab.com/wp-content/uploads/2019/01/Article-1-e1546481401772.jpg" alt="First Slide">
                                             </picture>
                                         </div>
                                             <div class="content-title mt-3">
