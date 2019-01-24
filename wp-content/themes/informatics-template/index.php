@@ -81,7 +81,7 @@ get_header(); ?>
                                                     last September 4, 2018.<br>
                                                     </p>
                                                     <div class="col-12 text-right ">
-                                                         <a href="http://dev.info-website.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/"
+                                                         <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-brings-home-medallion-of-excellence-from-world-skills-asean-competition/"
                                                         class="more-link">Read More</a>
                                                     </div>
                                             </div>
@@ -104,7 +104,7 @@ get_header(); ?>
                                                     agreement last September 13 that will provide new opportunities for
                                                     retirees.</p>
                                                     <div class="col-12 text-right">
-                                                         <a href="http://dev.info-website.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/"
+                                                         <a href="https://www.informatics-inculab.com/2018/09/14/informatics-philippines-seals-new-partnership-with-philippine-retirement-authority-pra/"
                                                         class="more-link">Read More</a>
                                                      </div>
                                             </div>
@@ -130,7 +130,7 @@ get_header(); ?>
                                                 
                                                     </p>
                                                     <div class="col-12 text-right">
-                                                        <a href="http://dev.info-website.com/2018/09/14/scholarship_with_info_manila/"
+                                                        <a href="https://www.informatics-inculab.com/2018/09/14/scholarship_with_info_manila/"
                                                         class="more-link">Read More</a>
                                                     </div>
                                             </div>
@@ -234,57 +234,57 @@ get_footer();
                             return {
                                 partners: [
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/acpi.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/acpi.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/Comptia-e1545010727697.jpg'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Comptia-e1545010727697.jpg'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/cybersecurity.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/cybersecurity.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2019/01/GDAP-e1546483628910.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2019/01/GDAP-e1546483628910.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/Google-Apps-for-Educ-e1545010754643.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Google-Apps-for-Educ-e1545010754643.png'
                                     },
                                     {
-                                        link: 'http://dev.info-website.com/wp-content/uploads/2018/12/lcci.png'
+                                        link: 'https://www.informatics-inculab.com/wp-content/uploads/2018/12/lcci.png'
                                     },
                                 ],
                                 testimonials: [
                                     {
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Mark-Bernales.jpg`,
                                         message: `“I was looking for ways to graduate in a short span of time without compromising the quality of education and I think that’s how Informatics has helped me a lot.”`,
                                         person: `-Mark Bernales`
                                     },
                                     {
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Norina-May.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Norina-May.jpg`,
                                         message: `“Informatics made a big difference in my life.” Informatics did not fail her with her dream of working abroad through advanced approach of education.`,
                                         person: `-Dorina May Luna`
                                     },
                                     {
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Jiovanney.jpg`,
                                         message: `“Informatics allowed me to grow professionally.” Informatics values every student and provide them the greatest services to make each one of them industry ready individuals.`,
                                         person: `-Jiovanney Emmanuel Bustamante`
                                     },
                                     {
-                                        image: `http://dev.info-website.com/wp-content/uploads/2018/12/Rupen.jpg`,
+                                        image: `https://www.informatics-inculab.com/wp-content/uploads/2018/12/Rupen.jpg`,
                                         message: `“Informatics is worldwide, students will definitely get jobs easily.” Informatics offered him a vast curriculum that allowed him to experience different subjects and broaden his horizons.`,
                                         person: `-Rupen Rajkarnikar`
                                     }
                                 ],
                                 reasons: [
                                     {
-                                        icon: 'http://dev.info-website.com/wp-content/uploads/2019/01/global.svg',
+                                        icon: 'https://www.informatics-inculab.com/wp-content/uploads/2019/01/global.svg',
                                         why: 'Globally Recognized'
                                     },
                                     {
-                                        icon: 'http://dev.info-website.com/wp-content/uploads/2019/01/qualified.svg',
+                                        icon: 'https://www.informatics-inculab.com/wp-content/uploads/2019/01/qualified.svg',
                                         why: 'International Qualified Graduates'
                                     },
                                     {
-                                        icon: 'http://dev.info-website.com/wp-content/uploads/2019/01/employment.svg',
+                                        icon: 'https://www.informatics-inculab.com/wp-content/uploads/2019/01/employment.svg',
                                         why: 'Guaranteed Employment'
                                     }
                                 ],

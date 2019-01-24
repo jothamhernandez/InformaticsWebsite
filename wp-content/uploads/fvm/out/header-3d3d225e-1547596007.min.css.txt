@@ -4,4 +4,4 @@ PROCESSED on Tue, 15 Jan 2019 23:46:52 +0000
 /wp-content/plugins/contact-form-7/includes/css/styles.css
 /wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css
 /wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css
-PROCESSED from http://dev.info-website.com/programs/bachelors-degree-programs/
+PROCESSED from https://www.informatics-inculab.com/programs/bachelors-degree-programs/

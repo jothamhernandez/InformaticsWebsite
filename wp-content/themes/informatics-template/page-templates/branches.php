@@ -448,11 +448,11 @@ get_header(); ?>
 							name:'Manila',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'2070 BDO Bldg. Recto Ave Quiapo, Manila',
@@ -494,11 +494,11 @@ get_header(); ?>
 							name:'Northgate',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'Indo China Drive, Northgate Cyberzone Filinvest Corporate City, Alabang Muntinlupa City, Metro Manila',
@@ -589,11 +589,11 @@ get_header(); ?>
 							name:'Cagayan De Oro',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'2nd level, Stary Bldg. Max Suniel St., Carmen, Cagayan De Oro',
@@ -644,11 +644,11 @@ get_header(); ?>
 							name:'Consolacion',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'MGM Building, North Road Consolacion 6001 Cebu',
@@ -673,11 +673,11 @@ get_header(); ?>
 							name:'Megamall',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'Level 5, Building A Baranggay, Wack Wack Mandaluyong City, Philippines 1550',
@@ -699,11 +699,11 @@ get_header(); ?>
 							name:'Festival Alabang',
 							isActive:false,
 							sliderlinks:[
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: true},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false},
-								{link:'http://dev.info-website.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'4th Level Festival Supermall, Filinvest Corporate City Alabang, Muntinlupa City',
