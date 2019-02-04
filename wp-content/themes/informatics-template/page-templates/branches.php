@@ -11,7 +11,7 @@ get_header(); ?>
                 <div class="container mb-5">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="my-title mt-5 mb-5">COLLEGES</h2>
+                            <h2 class="my-title mt-5 mb-5">COLLEGES ASDASD</h2>
                         </div>
                         <div class="col-md-12 border rounded-top mt-2" v-for="(branch,index) in branches">
                             <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch,$event,index)" ref="branches">
@@ -24,7 +24,7 @@ get_header(); ?>
                             </div>
 <!-- 							isActive ? activeClass : ''
 							dropbranch -->
-							<div class="beforedrop">
+							<div class="beforedrop" :id="'branch-'+branch.id">
 								<div class="col-md-12 py-2 px-0 dropdown-height">
 									<div class="container pb-3">
 										<div class="row">
@@ -76,7 +76,7 @@ get_header(); ?>
 															<i class="fa fa-envelope" aria-hidden="true"></i> 
 														</div>
 														<div class="col-md-11 col-10">
-															<p>{{branch.branchemail}}</p>
+															<p class="branch-email">{{branch.branchemail}}</p>
 														</div>
 													</div>
 												</div>
@@ -88,7 +88,11 @@ get_header(); ?>
                                                                 {{program.name}}
                                                             </h6>
                                                             <ul style="list-style: none; padding-left: 20px;">
-                                                                <li v-for="course in program.courses"><a href="">{{course.name}}</a></li>
+																<li v-for="course in program.courses"><a :href="course.href">{{course.name}}</a>
+																<ul style="list-style: none; padding-left: 20px;">
+                                                               		 <li v-for="special in course.specials"><a :href="special.href">{{special.name}}</a></li>
+                                                          	   </ul>
+																</li>
                                                             </ul>
                                                         </div>
 													</div>
@@ -96,18 +100,32 @@ get_header(); ?>
 												<div class="col-md-12">
 													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
 													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
-													<?php echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); ?>
+<!-- 													echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); -->
+													<form class="branches-submit mb-3">
+													<div class="row">
+														<div class="col-5">
+															<input type="text" placeholder = "Your Email" class="user-email" required>
+														</div>
+														<div class="col-5">
+															<input type="text" placeholder = "Other Course / Concern" class="message">
+															<input type="hidden" :value="branch.branchemail" class="hidden-email" required>
+														</div>
+														<div class="col-2">
+															<input type="submit">
+														</div>
+													</div>
+													</form>
 												</div>
 												<div class="col-md-12 mb-3">
 													<div class="row text-center">
 														<div class="col-md-7">
-															<button class="btn btn-block btn-primary" type="submit">Download Application Form</button>
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('/admissions/download-application-form/')">Download Application Form</button>
 														</div>
 														<div class="col-md-1">
 															<span class="align-middle py-2 text-center">or</span>
 														</div>
 														<div class="col-md-4">
-															<button class="btn btn-block btn-primary" type="submit">Apply Online</button>
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://system.http://dev.info-website.com.com/online-application')">Apply Online</button>
 														</div>
 													</div>
 												</div>
@@ -133,9 +151,9 @@ get_header(); ?>
                             </div>
 <!-- 							isActive ? activeClass : ''
 							dropbranch -->
-							<div class="beforedrop">
+							<div class="beforedrop" :id="'branch-'+branch.id">
 								<div class="col-md-12 py-2 px-0 dropdown-height">
-									<div class="container">
+									<div class="container pb-3">
 										<div class="row">
 											<div class="col-md-6 pt-90">
 												<div :id="'branch-car-'+branch.id" class="carousel slide" data-ride="carousel">
@@ -163,7 +181,7 @@ get_header(); ?>
 												<h4 class="mt-3">
 													{{branch.name}}
 												</h4>
-												<div class="col-md-12 mt-3">
+												<div class="col-md-12 mt-3 mt-md-0">
 													<div class="row">
 														<div class="col-md-1 col-2">
 															<i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -185,7 +203,7 @@ get_header(); ?>
 															<i class="fa fa-envelope" aria-hidden="true"></i> 
 														</div>
 														<div class="col-md-11 col-10">
-															<p>{{branch.branchemail}}</p>
+															<p class="branch-email">{{branch.branchemail}}</p>
 														</div>
 													</div>
 												</div>
@@ -197,16 +215,45 @@ get_header(); ?>
                                                                 {{program.name}}
                                                             </h6>
                                                             <ul style="list-style: none; padding-left: 20px;">
-                                                                <li v-for="course in program.courses"><a href="">{{course.name}}</a></li>
+																<li v-for="course in program.courses"><a :href="course.href">{{course.name}}</a>
+																<ul style="list-style: none; padding-left: 20px;">
+                                                               		 <li v-for="special in course.specials"><a :href="special.href">{{special.name}}</a></li>
+                                                          	   </ul>
+																</li>
                                                             </ul>
                                                         </div>
 													</div>
 												</div>
-												<div class="col-md-12 mt-3">
-													<div class="row flex-column flex-md-row">
-														<button class="btn btn-primary ml-md-3" type="submit">Download Application Form</button>
-														<span class="align-middle py-2 mx-2 text-center">or</span>
-														<button class="btn btn-primary" type="submit">Apply Online</button>
+												<div class="col-md-12">
+													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
+													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
+<!-- 													 echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]');  -->
+													<form class="branches-submit mb-3">
+													<div class="row">
+														<div class="col-12 col-md-5">
+															<input type="text" placeholder = "Your Email" class="user-email" required>
+														</div>
+														<div class="col-12 col-md-5">
+															<input type="text" placeholder = "Other Course / Concern" class="message">
+															<input type="hidden" :value="branch.branchemail" class="hidden-email" required>
+														</div>
+														<div class="col-12 col-md-2">
+															<input type="submit">
+														</div>
+													</div>
+													</form>
+												</div>
+												<div class="col-md-12 mb-3">
+													<div class="row text-center">
+														<div class="col-md-7">
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('/admissions/download-application-form/')">Download Application Form</button>
+														</div>
+														<div class="col-md-1">
+															<span class="align-middle py-2 text-center">or</span>
+														</div>
+														<div class="col-md-4">
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://www.informatics-inculab.com/online-application')">Apply Online</button>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -227,7 +274,7 @@ get_header(); ?>
 			data(){
 				return {
 					offsets:[],
-					sizes:[],
+					sizes:'',
 					branched:'',
 					branches:[
 						{
@@ -251,16 +298,20 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Humanities and Social Science (HUMSS)'
+                                            name:'Humanities and Social Science (HUMSS)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'General Academic Strand (GAS)'
+                                            name:'General Academic Strand (GAS)',
+											href:'/programs/senior-high-school-tracks/'
                                         }
                                     ]
                                 },
@@ -268,13 +319,26 @@ get_header(); ?>
                                     name:'Higher Education',
                                     courses:[
                                         {
-                                            name:'Bachelor of Science in Information Technology'
+                                            name:'Bachelor of Science in Information Technology with specialization in: ',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/',
+											specials:[
+												{
+													name:'> Applied Programming',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/',
+												},
+												{
+													name:'> Cyber Security',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/',
+												}
+											]
                                         },
                                         {
-                                            name:'Bachelor of Science in Computer Science'
+                                            name:'Bachelor of Science in Computer Science with Specialization in Internet of Things',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/'
                                         },
                                         {
-                                            name:'Bachelor of Science in Business Administration'
+                                            name:'Bachelor of Science in Business Administration with specialization in Marketing Management',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-business-administration/'
                                         }
                                     ]
                                 }
@@ -301,16 +365,34 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/',
+											specials:[
+												{
+													name:'> Computer Progamming NC III',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Java & .Net Techonology NCIII',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Animation NC II',
+													href:'/programs/diploma-courses/'
+												}
+											]
                                         },
                                         {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Humanities and Social Science (HUMSS)'
+                                            name:'Humanities and Social Science (HUMSS)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'General Academic Strand (GAS)'
+                                            name:'General Academic Strand (GAS)',
+											href:'/programs/senior-high-school-tracks/'
                                         }
                                     ]
                                 },
@@ -318,13 +400,29 @@ get_header(); ?>
                                     name:'Higher Education',
                                     courses:[
                                         {
-                                            name:'Bachelor of Science in Computer Science'
+                                            name:'Bachelor of Science in Computer Science',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/'
                                         },
                                         {
-                                            name:'Bachelor of Science in Entrepreneurship'
+                                            name:'Bachelor of Science in Entrepreneurship',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-entrepreneurship/'
                                         },
                                         {
-                                            name:'Bachelor of Science in Information Systems'
+                                            name:'Bachelor of Science in Information Systems',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-system/'
+                                        }
+                                    ]
+                                },
+								{
+                                    name:'Diploma Programs',
+                                    courses:[
+                                        {
+                                            name:'Diploma in Information Technology',
+											href:'/programs/diploma-courses/'
+                                        },
+                                        {
+                                            name:'Diploma in Gaming and Animation',
+											href:'/programs/diploma-courses/'
                                         }
                                     ]
                                 }
@@ -351,16 +449,20 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Humanities and Social Science (HUMSS)'
+                                            name:'Humanities and Social Science (HUMSS)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'General Academic Strand (GAS)'
+                                            name:'General Academic Strand (GAS)',
+											href:'/programs/senior-high-school-tracks/'
                                         }
                                     ]
                                 },
@@ -368,16 +470,44 @@ get_header(); ?>
                                     name:'Higher Education',
                                     courses:[
                                         {
-                                            name:'Bachelor of Science in Information Technology'
+                                            name:'Bachelor of Science in Information Technology',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/',
+											specials:[
+												{
+													name:'> Applications Development',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												},
+												{
+													name:'> Networks and Cyber Security',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												},
+												{
+													name:'> Multimedia Arts',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												}
+											]
                                         },
                                         {
-                                            name:'Bachelor of Science in Computer Science'
+                                            name:'Bachelor of Science in Computer Science with Specialization in:',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/',
+											specials:[
+												{
+													name:'> Data Science',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/'
+												},
+												{
+													name:'> Internet of Things',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/'
+												}
+											]
                                         },
                                         {
-                                            name:'Bachelor of Science in Business Administration'
+                                            name:'Bachelor of Science in Business Administration with specialization in Digital Marketing',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-business-administration/'
                                         },
 										{
-                                            name:'Bachelor of Science in Information Systems'
+                                            name:'Bachelors of Science in Information Systems with specialization in Project Management',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-system/'
                                         }
                                     ]
                                 }
@@ -403,16 +533,34 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/',
+											specials:[
+												{
+													name:'> Computer Progamming NC III',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Java & .Net Techonology NCIII',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Animation NC II',
+													href:'/programs/diploma-courses/'
+												}
+											]
                                         },
                                         {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Humanities and Social Science (HUMSS)'
+                                            name:'Humanities and Social Science (HUMSS)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'General Academic Strand (GAS)'
+                                            name:'General Academic Strand (GAS)',
+											href:'/programs/senior-high-school-tracks/'
                                         }
                                     ]
                                 },
@@ -420,13 +568,16 @@ get_header(); ?>
                                     name:'Higher Education',
                                     courses:[
                                         {
-                                            name:'Bachelor of Science in Accounting Information Systems'
+                                            name:'Bachelor of Science in Accounting Information Systems',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-accounting-information-system/'
                                         },
                                         {
-                                            name:'Bachelor of Science in Management Accounting'
+                                            name:'Bachelor of Science in Management Accounting',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-management-accounting/'
                                         },
                                         {
-                                            name:'Bachelor of Science in Office Administration'
+                                            name:'Bachelor of Science in Office Administration',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-office-administration/'
                                         }
                                     ]
                                 },
@@ -434,10 +585,12 @@ get_header(); ?>
                                     name:'Diploma Programs',
                                     courses:[
                                         {
-                                            name:'Diploma in Information Technology'
+                                            name:'Diploma in Information Technology',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Diploma in Gaming and Animation'
+                                            name:'Diploma in Gaming and Animation',
+											href:'/programs/diploma-courses/'
                                         }
                                     ]
                                 }
@@ -448,11 +601,11 @@ get_header(); ?>
 							name:'Manila',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/manila.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/manila.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/manila.jpg',
 								isActive: false}
 							],
 							branchaddress:'2070 BDO Bldg. Recto Ave Quiapo, Manila',
@@ -463,16 +616,20 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Humanities and Social Science (HUMSS)'
+                                            name:'Humanities and Social Science (HUMSS)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'General Academic Strand (GAS)'
+                                            name:'General Academic Strand (GAS)',
+											href:'/programs/senior-high-school-tracks/'
                                         }
                                     ]
                                 },
@@ -480,10 +637,22 @@ get_header(); ?>
                                     name:'Higher Education',
                                     courses:[
                                         {
-                                            name:'Bachelor of Science in Information Technology'
+                                            name:'Bachelor of Science in Information Technology with specialization in:',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/',
+											specials:[
+												{
+													name:'> Applications Development',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												},
+												{
+													name:'> Multimedia Arts',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												}
+											]
                                         },
                                         {
-                                            name:'Bachelor of Science in Business Administration'
+                                            name:'Bachelor of Science in Business Administration',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-business-administration/'
                                         }
                                     ]
                                 }
@@ -494,11 +663,11 @@ get_header(); ?>
 							name:'Northgate',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg',
 								isActive: false}
 							],
 							branchaddress:'Indo China Drive, Northgate Cyberzone Filinvest Corporate City, Alabang Muntinlupa City, Metro Manila',
@@ -509,10 +678,20 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/'
                                         },
                                         {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
+                                        },
+                                        {
+                                            name:'Humanities And Social Sciences',
+											href:'/programs/senior-high-school-tracks/'
+                                        },
+                                        {
+                                            name:'General Academic Strand',
+											href:'/programs/senior-high-school-tracks/'
                                         }
                                     ]
                                 },
@@ -520,13 +699,36 @@ get_header(); ?>
                                     name:'Higher Education',
                                     courses:[
                                         {
-                                            name:'Bachelor of Science in Information Technology'
+                                            name:'Bachelor of Science in Information Technology with specialization in:',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/',
+											specials:[
+												{
+													name:'> Applications Development',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												},
+												{
+													name:'> Cyber Security',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-information-technology-2/'
+												}
+											]
                                         },
                                         {
-                                            name:'Bachelor of Science in Business Administration'
+                                            name:'Bachelor of Science in Business Administration',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-business-administration/'
                                         },
                                         {
-                                            name:'Bachelor of Science in Computer Science'
+                                            name:'Bachelor of Science in Computer Science with specialization in:',
+											href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/',
+											specials:[
+												{
+													name:'> Internet of Things',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/'
+												},
+												{
+													name:'> Data Science',
+													href:'/programs/bachelors-degree-programs/bachelor-of-science-in-computer-science/'
+												}
+											]
                                         }
                                     ]
                                 }
@@ -554,7 +756,22 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communications and Technology Strand (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/',
+											specials:[
+												{
+													name:'> Computer Progamming NC III',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Computer System Servicing NC II',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Visual Graphics and Design NC III',
+													href:'/programs/diploma-courses/'
+												}
+											]
 										}
                                     ]
                                 },
@@ -562,22 +779,28 @@ get_header(); ?>
                                     name:'Diploma Programs',
                                     courses:[
                                         {
-                                            name:'Diploma in Information Technology'
+                                            name:'Diploma in Information Technology',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Computer Programming NC III'
+                                            name:'Computer Programming NC III',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Computer System Servicing NC II'
+                                            name:'Computer System Servicing NC II',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Visual Graphics Design NC III'
+                                            name:'Visual Graphics Design NC III',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Web Development'
+                                            name:'Web Development',
+											href:'/programs/diploma-courses/'
                                         },
 										{
-											name:'Web Design'
+											name:'Web Design',
+											href:'/programs/diploma-courses/'
 										}
                                     ]
                                 }
@@ -589,11 +812,11 @@ get_header(); ?>
 							name:'Cagayan De Oro',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/cdo.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/cdo.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/cdo.jpg',
 								isActive: false}
 							],
 							branchaddress:'2nd level, Stary Bldg. Max Suniel St., Carmen, Cagayan De Oro',
@@ -601,22 +824,50 @@ get_header(); ?>
 							branchemail:'info.cdo@informatics.com.ph',
 							programs:[
 								{
+                                    name:'Senior High School (SHS)',
+                                    courses:[
+                                        {
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/',
+											specials:[
+												{
+													name:'> Computer Progamming NC III',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Computer System Servicing NC II',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Animation NC II',
+													href:'/programs/diploma-courses/'
+												}
+											]
+										}
+                                    ]
+                                },
+								{
                                     name:'Diploma Programs',
                                     courses:[
                                         {
-                                            name:'Diploma in Computer Studies (Computer Science)'
+                                            name:'Diploma in Computer Studies (Computer Science)',
+											href:'/programs/diploma-courses/'
 										},
 										 {
-                                            name:'Diploma in Computer Studies (Multimedia and Internet)'
+                                            name:'Diploma in Computer Studies (Multimedia and Internet)',
+											href:'/programs/diploma-courses/'
 										},
 										 {
-                                            name:'Diploma Animation NC III'
+                                            name:'Diploma Animation NC III',
+											href:'/programs/diploma-courses/'
 										},
 										 {
-                                            name:'Diploma Contact Center Services NC II'
+                                            name:'Diploma Contact Center Services NC II',
+											href:'/programs/diploma-courses/'
 										},
 										 {
-                                            name:'Computer System Servicing NC II'
+                                            name:'Computer System Servicing NC II',
+											href:'/programs/diploma-courses/'
 										}
                                     ]
                                 },
@@ -624,16 +875,20 @@ get_header(); ?>
                                     name:'Certification Programs',
                                     courses:[
                                         {
-                                            name:'Programmer Certification'
+                                            name:'Programmer Certification',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Multimedia Artist Certification'
+                                            name:'Multimedia Artist Certification',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Web Application Developer Certification'
+                                            name:'Web Application Developer Certification',
+											href:'/programs/diploma-courses/'
                                         },
                                         {
-                                            name:'Game Developer Certification'
+                                            name:'Game Developer Certification',
+											href:'/programs/diploma-courses/'
                                         }
                                     ]
                                 }
@@ -644,11 +899,11 @@ get_header(); ?>
 							name:'Consolacion',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/consolacion.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/consolacion.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/consolacion.jpg',
 								isActive: false}
 							],
 							branchaddress:'MGM Building, North Road Consolacion 6001 Cebu',
@@ -659,10 +914,34 @@ get_header(); ?>
                                     name:'Senior High School (SHS)',
                                     courses:[
                                         {
-                                            name:'Information Communication and Technology (ICT)'
+                                            name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/',
+											specials:[
+												{
+													name:'> Computer Progamming NC III',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Computer System Servicing NC II',
+													href:'/programs/diploma-courses/'
+												},
+												{
+													name:'> Animation NC II',
+													href:'/programs/diploma-courses/'
+												}
+											]
 										},
 										 {
-                                            name:'Accounting and Business Management Strand (ABM)'
+                                            name:'Accounting and Business Management Strand (ABM)',
+											href:'/programs/senior-high-school-tracks/'
+										},
+										 {
+                                            name:'Humanities And Social Sciences',
+											href:'/programs/senior-high-school-tracks/'
+										},
+										 {
+                                            name:'General Academic Strand',
+											href:'/programs/senior-high-school-tracks/'
 										}
                                     ]
                                 }
@@ -673,11 +952,11 @@ get_header(); ?>
 							name:'Megamall',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall.jpg',
 								isActive: false}
 							],
 							branchaddress:'Level 5, Building A Baranggay, Wack Wack Mandaluyong City, Philippines 1550',
@@ -699,11 +978,11 @@ get_header(); ?>
 							name:'Festival Alabang',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/alabang.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/alabang.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/caloocan.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/alabang.jpg',
 								isActive: false}
 							],
 							branchaddress:'4th Level Festival Supermall, Filinvest Corporate City Alabang, Muntinlupa City',
@@ -715,10 +994,12 @@ get_header(); ?>
                                     courses:[
                                         {
                                            
-													name:'Information Communications and Technology Strand (ICT)'
+											name:'Information Communications and Technology Strand (ICT)',
+											href:'/programs/senior-high-school-tracks/'
 												},
 												{
-													name:'Accounting and Business Management Strand (ABM)'
+												name:'Accounting and Business Management Strand (ABM)',
+												href:'/programs/senior-high-school-tracks/'
 												
 										}
                                     ]
@@ -740,18 +1021,49 @@ get_header(); ?>
 				 for(var i = 0; i<$('.cursor-pointer').length; i++){
 					this.offsets[i] = $($('.cursor-pointer')[i]).offset().top;
 				 }
-				 for(var i = 0; i<$('.dropdown-height').length; i++){
-					this.sizes[i] = $('.dropdown-height')[i].clientHeight;
-				 }
+				 $('.branches-submit').on('submit',function(e){
+					 e.preventDefault();
+					var my_user = {
+						sender_email: $(this).find('.user-email').val(),
+						receipient_email: $(this).find('.hidden-email').val(),
+						message:
+						'Message: '+$(this).find('.message').val()
+					};
+					 console.log(my_user);
+					 $(this).find('.user-email').val("");
+					 $(this).find('.message').val("");
+					 alert("Message Succesfully Send, kindly wait for the reply, Thank You");
+		            fetch('https://system.informatics-inculab.com/api/inquiry',{
+		                method: 'POST',
+		                body: JSON.stringify(my_user),
+						mode:'cors',
+		                headers:{
+		                     'Accept': 'application/json',
+		    				'Content-Type': 'application/json'
+		                }
+		            }).then((response)=>{
+		              return response.json();
+		            }).then((myJson)=>{
+		                console.log(JSON.stringify(myJson));
+		            }).catch((error)=>{
+						console.log(error)
+					})
+				 });
 			 },
 			methods:{
 				clicked(branch,event,index){
 					var $ = jQuery
-					
+					if ($(window).width() < 800){
+					// do stuff
+					this.sizes = 90;
+					}else{
+						this.sizes = 30;
+					}
+					var setHeight = $('.beforedrop#branch-'+branch.id+' .dropdown-height')[0].clientHeight + this.sizes;
 					if(this.branched != branch){
 						this.branched = branch;
 						this.unclicked(branch)
-						$($('.beforedrop')[index]).css({height:this.sizes[index]})
+						$($('.beforedrop')[index]).css({height:setHeight});
 						$('html,body').animate({scrollTop:this.offsets[index] - 50})
 					}else{
 						this.branched = '';
@@ -761,11 +1073,11 @@ get_header(); ?>
 				},
 				clickedInstitute(branch,index){
 					var $ = jQuery
-					
+					var setHeight = $('.beforedrop#branch-'+branch.id+' .dropdown-height')[0].clientHeight + 30;
 					if(this.branched != branch){
 					this.branched = branch;
 					this.unclicked(branch)
-					$($('.beforedrop')[index+6]).css({height:this.sizes[index+6]})
+					$($('.beforedrop')[index+6]).css({height:setHeight})
 					$('html,body').animate({scrollTop:this.offsets[index+6] - 50})
 					}else{
 						this.branched = '';

@@ -104,6 +104,20 @@
 				jQuery('#content').offset({top: jQuery("#masthead").height()});
 				var $ = jQuery;
 				$(document).ready(function() {
+					var programList = [];
+					$('.program-header').each(function(index){
+						programList[index] = $('.program-header')[index].innerHTML;
+					})
+
+					var selectTag = $('#program-select');
+
+					programList.forEach((program)=>{
+						program = program.charAt(0).toUpperCase() + program.slice(1).toLowerCase();
+						selectTag.append(`
+						<option value="${program}">${program}</option>
+						`);
+					})
+
 					$('#programs-btn').click(()=>{
 						$('.program-contact-form').slideToggle()
 					})
