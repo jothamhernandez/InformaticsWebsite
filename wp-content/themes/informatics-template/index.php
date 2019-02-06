@@ -193,7 +193,7 @@ get_header(); ?>
                                 <div class="col-md-12">
                                     <div class="row d-flex align-items-center justify-content-start flex-nowrap">
                                         <div class="col-2 col-md-1">
-                                             <div class="arrow-container-slider text-md-right"  v-on:click="pressedArrow">
+                                             <div class="arrow-container-slider text-md-right"  v-on:click="pressedArrow('left')">
                                                 <i class='fas fa-chevron-left fa-chevron-2-right'></i>
                                             </div>
                                         </div>
@@ -201,7 +201,7 @@ get_header(); ?>
                                              <informatics-slider ref = "arrows" :items="partners" slider-speed="5000"></informatics-slider>
                                         </div>
                                         <div class="col-2 col-md-1">
-                                            <div class="arrow-container-slider" v-on:click="pressedArrow">
+                                            <div class="arrow-container-slider" v-on:click="pressedArrow('right')">
                                                 <i class='fas fa-chevron-right fa-chevron-2-right'></i>
                                             </div>
                                         </div>
@@ -296,8 +296,8 @@ get_footer();
                            
                         },
                         methods:{
-                            pressedArrow(){
-                                this.$refs.arrows.interval()
+                            pressedArrow(varia){
+                                this.$refs.arrows.interval(varia)
                             }
                         }
                     })

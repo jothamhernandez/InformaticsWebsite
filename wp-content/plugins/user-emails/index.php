@@ -12,23 +12,39 @@ function my_program_list_menu(){
 }
 
 function program_list_edit_page(){
+    global $wpdb;
+    $emails = $wpdb->get_results("SELECT * from info_user_emails");
+    print_r($emails);
     ?>
     <h1>User Emails</h1>
     <div class="container">
-        <table id="customers">
+        <table id="email-table">
             <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Date</th>
             </tr>
+            <?php foreach($emails as $email){?>
             <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                <td><?php echo $email->email; ?></td>
+                <td><?php echo $email->message; ?></td>
+                <td><?php echo $email->date; ?></td>
             </tr>
+            <?php } ?>
         </table>
     </div>
     <?php
 }
 
+function email_list_style(){
+?>
+<style>
+#email-table td{
+    padding:14px;
+}
+</style>
+<?php 
+}
+
+add_action('admin_head','email_list_style');
 ?>

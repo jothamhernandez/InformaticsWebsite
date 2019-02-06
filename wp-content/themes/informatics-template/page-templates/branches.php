@@ -11,7 +11,7 @@ get_header(); ?>
                 <div class="container mb-5">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="my-title mt-5 mb-5">COLLEGES ASDASD</h2>
+                            <h2 class="my-title mt-5 mb-5">COLLEGES</h2>
                         </div>
                         <div class="col-md-12 border rounded-top mt-2" v-for="(branch,index) in branches">
                             <div class="row py-2 pl-2 bg-gray cursor-pointer" v-on:click="clicked(branch,$event,index)" ref="branches">
@@ -100,21 +100,7 @@ get_header(); ?>
 												<div class="col-md-12">
 													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
 													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
-<!-- 													echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); -->
-													<form class="branches-submit mb-3">
-													<div class="row">
-														<div class="col-5">
-															<input type="text" placeholder = "Your Email" class="user-email" required>
-														</div>
-														<div class="col-5">
-															<input type="text" placeholder = "Other Course / Concern" class="message">
-															<input type="hidden" :value="branch.branchemail" class="hidden-email" required>
-														</div>
-														<div class="col-2">
-															<input type="submit">
-														</div>
-													</div>
-													</form>
+													<?php echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); ?>
 												</div>
 												<div class="col-md-12 mb-3">
 													<div class="row text-center">
@@ -125,7 +111,7 @@ get_header(); ?>
 															<span class="align-middle py-2 text-center">or</span>
 														</div>
 														<div class="col-md-4">
-															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://system.http://dev.info-website.com.com/online-application')">Apply Online</button>
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://system.https://www.informatics-inculab.com.com/online-application')">Apply Online</button>
 														</div>
 													</div>
 												</div>
@@ -227,21 +213,7 @@ get_header(); ?>
 												<div class="col-md-12">
 													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
 													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
-<!-- 													 echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]');  -->
-													<form class="branches-submit mb-3">
-													<div class="row">
-														<div class="col-12 col-md-5">
-															<input type="text" placeholder = "Your Email" class="user-email" required>
-														</div>
-														<div class="col-12 col-md-5">
-															<input type="text" placeholder = "Other Course / Concern" class="message">
-															<input type="hidden" :value="branch.branchemail" class="hidden-email" required>
-														</div>
-														<div class="col-12 col-md-2">
-															<input type="submit">
-														</div>
-													</div>
-													</form>
+													<?php echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); ?>
 												</div>
 												<div class="col-md-12 mb-3">
 													<div class="row text-center">
@@ -952,11 +924,11 @@ get_header(); ?>
 							name:'Megamall',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall.jpg',
+								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
 								isActive: false}
 							],
 							branchaddress:'Level 5, Building A Baranggay, Wack Wack Mandaluyong City, Philippines 1550',
@@ -1021,34 +993,6 @@ get_header(); ?>
 				 for(var i = 0; i<$('.cursor-pointer').length; i++){
 					this.offsets[i] = $($('.cursor-pointer')[i]).offset().top;
 				 }
-				 $('.branches-submit').on('submit',function(e){
-					 e.preventDefault();
-					var my_user = {
-						sender_email: $(this).find('.user-email').val(),
-						receipient_email: $(this).find('.hidden-email').val(),
-						message:
-						'Message: '+$(this).find('.message').val()
-					};
-					 console.log(my_user);
-					 $(this).find('.user-email').val("");
-					 $(this).find('.message').val("");
-					 alert("Message Succesfully Send, kindly wait for the reply, Thank You");
-		            fetch('https://system.informatics-inculab.com/api/inquiry',{
-		                method: 'POST',
-		                body: JSON.stringify(my_user),
-						mode:'cors',
-		                headers:{
-		                     'Accept': 'application/json',
-		    				'Content-Type': 'application/json'
-		                }
-		            }).then((response)=>{
-		              return response.json();
-		            }).then((myJson)=>{
-		                console.log(JSON.stringify(myJson));
-		            }).catch((error)=>{
-						console.log(error)
-					})
-				 });
 			 },
 			methods:{
 				clicked(branch,event,index){

@@ -44,8 +44,15 @@
 					scrollLeft: slide
 				});
 			},
-			interval() {
-				this.currentSlide++;
+			interval(item) {
+				if(item == 'left'){
+					this.currentSlide--;
+					if(this.currentSlide <= 0){
+						this.currentSlide = this.dots
+					}
+				}else{
+					this.currentSlide++;
+				}
 				if (this.currentSlide > this.dots) {
 					this.currentSlide = 1;
 				}
