@@ -60,7 +60,7 @@ get_header(); ?>
              e.preventDefault();
             var my_user = {
                 sender_email: $('#user-email').val(),
-                receipient_email: 'hackerman0605@gmail.com',
+                receipient_email: 'info.marketing@informatics.com.ph',
 				sender_name:$('#user-name').val(),
                 message: $('#message').val()
             };
@@ -68,24 +68,22 @@ get_header(); ?>
 				$('#user-email').val("");
 				$('#user-name').val("");
 				$('#message').val("");
-			 var magic = "HAKDOOOOG";
-			 
-			 console.log("<?php echo magic; ?>");
-//             fetch('https://system.informatics-inculab.com/api/inquiry',{
-//                 method: 'POST',
-//                 body: JSON.stringify(my_user),
-// 				mode:'cors',
-//                 headers:{
-//                      'Accept': 'application/json',
-//     				'Content-Type': 'application/json'
-//                 }
-//             }).then((response)=>{
-//               return response.json();
-//             }).then((myJson)=>{
+		
+            fetch('https://system.informatics-inculab.com/api/inquiry',{
+                method: 'POST',
+                body: JSON.stringify(my_user),
+				mode:'cors',
+                headers:{
+                     'Accept': 'application/json',
+    				'Content-Type': 'application/json'
+                }
+            }).then((response)=>{
+              return response.json();
+            }).then((myJson)=>{
 	
-//             }).catch((error)=>{
-// 				console.log(error)
-// 			})
+            }).catch((error)=>{
+				console.log(error)
+			})
          })
         </script>
     </div>

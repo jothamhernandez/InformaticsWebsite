@@ -100,7 +100,21 @@ get_header(); ?>
 												<div class="col-md-12">
 													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
 													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
-													<?php echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); ?>
+													 <!-- echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]');  -->
+													 <form class="program-form">
+														 <input type="hidden" :value="branch.branchemail" class="user-hide">
+														<div class="form-row">
+															<div class="form-group col-md-5">
+																<input type="email" class="form-control user-email" placeholder="Email" required>
+															</div>
+															<div class="form-group col-md-5">
+																<input type="text" class="form-control user-message" placeholder="Other Course / Concern" required>
+															</div>
+															<div class="form-group col-md-2">
+																<button class="btn btn-block btn-primary" type="submit">Send</button>
+															</div>
+														</div>
+													 </form>
 												</div>
 												<div class="col-md-12 mb-3">
 													<div class="row text-center">
@@ -213,7 +227,21 @@ get_header(); ?>
 												<div class="col-md-12">
 													<!-- <button class="btn btn-block btn-primary" type="submit">Other Courses</button> -->
 													<!-- <input id="other-courses" placeholder="What course are you finding? Type here" type="text"> -->
-													<?php echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]'); ?>
+													 <!-- echo do_shortcode('[contact-form-7 id="1773" title="Other Courses"]');  -->
+													 <form class="program-form">
+														 <input type="hidden" :value="branch.branchemail" class="user-hide">
+														<div class="form-row">
+															<div class="form-group col-md-5">
+																<input type="email" class="form-control user-email" placeholder="Email" required>
+															</div>
+															<div class="form-group col-md-5">
+																<input type="text" class="form-control user-message" placeholder="Other Course / Concern" required>
+															</div>
+															<div class="form-group col-md-2">
+																<button class="btn btn-block btn-primary" type="submit">Send</button>
+															</div>
+														</div>
+													 </form>
 												</div>
 												<div class="col-md-12 mb-3">
 													<div class="row text-center">
@@ -993,17 +1021,39 @@ get_header(); ?>
 				 for(var i = 0; i<$('.cursor-pointer').length; i++){
 					this.offsets[i] = $($('.cursor-pointer')[i]).offset().top;
 				 }
+				 $('.program-form').submit(function(e){
+					e.preventDefault();
+					var my_user = {
+						sender_email: $(this).find('.user-email').val(),
+						receipient_email: $(this).find('.user-hide').val(),
+						sender_name:'Unknown',
+						message: $(this).find('.user-message').val()
+					};
+					alert("Message SuccessFully Send");
+					$(this).find('.user-email').val("");
+					$(this).find('.user-message').val("");
+				
+					fetch('https://system.informatics-inculab.com/api/inquiry',{
+						method: 'POST',
+						body: JSON.stringify(my_user),
+						mode:'cors',
+						headers:{
+							'Accept': 'application/json',
+							'Content-Type': 'application/json'
+						}
+					}).then((response)=>{
+					return response.json();
+					}).then((myJson)=>{
+			
+					}).catch((error)=>{
+						console.log(error)
+					})
+				})
 			 },
 			methods:{
 				clicked(branch,event,index){
 					var $ = jQuery
-					if ($(window).width() < 800){
-					// do stuff
-					this.sizes = 90;
-					}else{
-						this.sizes = 30;
-					}
-					var setHeight = $('.beforedrop#branch-'+branch.id+' .dropdown-height')[0].clientHeight + this.sizes;
+					var setHeight = $('.beforedrop#branch-'+branch.id+' .dropdown-height')[0].clientHeight;
 					if(this.branched != branch){
 						this.branched = branch;
 						this.unclicked(branch)
@@ -1017,7 +1067,7 @@ get_header(); ?>
 				},
 				clickedInstitute(branch,index){
 					var $ = jQuery
-					var setHeight = $('.beforedrop#branch-'+branch.id+' .dropdown-height')[0].clientHeight + 30;
+					var setHeight = $('.beforedrop#branch-'+branch.id+' .dropdown-height')[0].clientHeight;
 					if(this.branched != branch){
 					this.branched = branch;
 					this.unclicked(branch)

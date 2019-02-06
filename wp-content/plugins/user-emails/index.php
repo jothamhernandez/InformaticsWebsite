@@ -14,7 +14,6 @@ function my_program_list_menu(){
 function program_list_edit_page(){
     global $wpdb;
     $emails = $wpdb->get_results("SELECT * from info_user_emails");
-    print_r($emails);
     ?>
     <h1>User Emails</h1>
     <div class="container">

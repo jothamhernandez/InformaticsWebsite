@@ -37,6 +37,7 @@ get_header(); ?>
 						  <div class="form-group">
 							<select id="user-branch" class="form-control">
 								<option value="Preferred Branch">Preferred Branch</option>
+								<option value="info.marketing@informatics.com.ph">Informatics Head Office</option>
 								<option value="Baguio">Informatics Institute - Baguio</option>
 								<option value="Cagayan De Oro">Informatics Institute – Cagayan De Oro</option>
 								<option value="Caloocan">Informatics College - Caloocan</option>
@@ -70,12 +71,11 @@ get_header(); ?>
 					 e.preventDefault();
 					var my_user = {
 						sender_email: $('#user-email').val(),
-						receipient_email: 'hackerman0605@gmail.com',
+						receipient_email: 'info.marketing@informatics.com.ph',
 						sender_name:$('#user-name').val(),
 						message:
 						'Message: '+$('#user-message').val()
 					};
-					 console.log(my_user);
 					 $('#user-email').val("");
 		  			$('#user-name').val("");
 		 			$('#user-number').val("");
