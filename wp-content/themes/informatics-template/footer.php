@@ -96,7 +96,7 @@
 		</div>
 	</div>
 <div class="scroll-up-button" style="background:rgba(150,150,150,.8); border-radius:100%; padding:2px;">
-	<img src="https://www.informatics-inculab.com/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
+	<img src="https://www.informatics.edu.ph/wp-content/uploads/2018/12/arrow-up-01-512.png" class="">
 </div>
 </footer>
 		<script>
