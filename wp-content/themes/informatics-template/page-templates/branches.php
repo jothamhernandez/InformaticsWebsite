@@ -125,7 +125,7 @@ get_header(); ?>
 															<span class="align-middle py-2 text-center">or</span>
 														</div>
 														<div class="col-md-4">
-															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://system.https://www.informatics-inculab.com.com/online-application')">Apply Online</button>
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://system.https://www.informatics.edu.ph.com/online-application')">Apply Online</button>
 														</div>
 													</div>
 												</div>
@@ -252,7 +252,7 @@ get_header(); ?>
 															<span class="align-middle py-2 text-center">or</span>
 														</div>
 														<div class="col-md-4">
-															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://www.informatics-inculab.com/online-application')">Apply Online</button>
+															<button class="btn btn-block btn-primary" type="submit" onclick="window.open('https://www.informatics.edu.ph/online-application')">Apply Online</button>
 														</div>
 													</div>
 												</div>
@@ -283,11 +283,11 @@ get_header(); ?>
 							isActive:false,
 							height:'',
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/caloocan.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/caloocan.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/caloocan.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/caloocan.jpg',
 								isActive: false}
 							],
 							branchaddress:'380 Rizal Avenue Extension Corner 11th Avenue Grace Park, Metro Manila',
@@ -350,11 +350,11 @@ get_header(); ?>
 							name:'Cebu',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/cebu.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/cebu.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/cebu.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/cebu.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/cebu.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/cebu.jpg',
 								isActive: false}
 							],
 							branchaddress:'C.L. Benedicto Bldg. J. De Vera Street Cebu City',
@@ -434,11 +434,11 @@ get_header(); ?>
 							name:'Eastwood',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/eastwood.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/eastwood.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/eastwood.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/eastwood.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/eastwood.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/eastwood.jpg',
 								isActive: false}
 							],
 							branchaddress:'185 E. Rodriguez Jr. Avenue (C5), Acropolis, Bgy. Bagumbayan, Quezon City',
@@ -518,11 +518,11 @@ get_header(); ?>
 							name:'Cavite',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/cavite.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/cavite.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/cavite.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/cavite.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/cavite.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/cavite.jpg',
 								isActive: false}
 							],
 							branchaddress:'Informatics Bldg. E. Aguinaldo Highway, Tanzang Luma V, Imus City, Cavite',
@@ -601,11 +601,11 @@ get_header(); ?>
 							name:'Manila',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/manila.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/manila.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/manila.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/manila.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/manila.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/manila.jpg',
 								isActive: false}
 							],
 							branchaddress:'2070 BDO Bldg. Recto Ave Quiapo, Manila',
@@ -663,11 +663,11 @@ get_header(); ?>
 							name:'Northgate',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/12/Info-Website-09.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/12/Info-Website-09.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/12/Info-Website-09.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/12/Info-Website-09.jpg',
 								isActive: false}
 							],
 							branchaddress:'Indo China Drive, Northgate Cyberzone Filinvest Corporate City, Alabang Muntinlupa City, Metro Manila',
@@ -741,11 +741,11 @@ get_header(); ?>
 							name:'Baguio',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/baguio.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/baguio.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/baguio.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/baguio.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/baguio.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/baguio.jpg',
 								isActive: false}
 							],
 							branchaddress:'3/F Decibar Bldg., #65 Lower Bonifacio St., Baguio City',
@@ -812,11 +812,11 @@ get_header(); ?>
 							name:'Cagayan De Oro',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/cdo.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/cdo.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/cdo.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/cdo.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/cdo.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/cdo.jpg',
 								isActive: false}
 							],
 							branchaddress:'2nd level, Stary Bldg. Max Suniel St., Carmen, Cagayan De Oro',
@@ -899,11 +899,11 @@ get_header(); ?>
 							name:'Consolacion',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/consolacion.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/consolacion.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/consolacion.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/consolacion.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/consolacion.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/consolacion.jpg',
 								isActive: false}
 							],
 							branchaddress:'MGM Building, North Road Consolacion 6001 Cebu',
@@ -952,11 +952,11 @@ get_header(); ?>
 							name:'Megamall',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2018/09/megamall-e1548723232143.jpg',
 								isActive: false}
 							],
 							branchaddress:'Level 5, Building A Baranggay, Wack Wack Mandaluyong City, Philippines 1550',
@@ -978,11 +978,11 @@ get_header(); ?>
 							name:'Festival Alabang',
 							isActive:false,
 							sliderlinks:[
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/alabang.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/alabang.jpg',
 								isActive: true},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/alabang.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/alabang.jpg',
 								isActive: false},
-								{link:'https://www.informatics-inculab.com/wp-content/uploads/2019/01/alabang.jpg',
+								{link:'https://www.informatics.edu.ph/wp-content/uploads/2019/01/alabang.jpg',
 								isActive: false}
 							],
 							branchaddress:'4th Level Festival Supermall, Filinvest Corporate City Alabang, Muntinlupa City',

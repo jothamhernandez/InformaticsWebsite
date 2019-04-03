@@ -537,19 +537,19 @@ header form{
     text-transform: uppercase;
 }
 .my-admission-image{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/Info-Website-19-1.jpg') no-repeat center center;
+	background: url('https://www.informatics.edu.ph/wp-content/uploads/2018/09/Info-Website-19-1.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .bg-admission{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center;
+	background: url('https://www.informatics.edu.ph/wp-content/uploads/2018/09/northgate.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 
 /* Diploma Course */
 .my-diploma-image{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2018/11/Info-Website-38.jpg') no-repeat center center;
+	background: url('https://www.informatics.edu.ph/wp-content/uploads/2018/11/Info-Website-38.jpg') no-repeat center center;
 	background-size: cover;
 }
 .diploma-course-p{
@@ -1037,12 +1037,12 @@ nav{
 }
 
 .bg-northgate{
-	background: url('https://www.informatics-inculab.com/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
+	background: url('https://www.informatics.edu.ph/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
 }
 
 @media screen and (max-width:500px){
 	.bg-northgate{
-		background: url('https://www.informatics-inculab.com/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
+		background: url('https://www.informatics.edu.ph/wp-content/uploads/2019/01/Info-Website-01-e1546481704254.jpg') no-repeat center center fixed; background-size:cover;
 	}
 }
 
