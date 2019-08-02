@@ -146,11 +146,11 @@ add_action( 'widgets_init', 'wp_bootstrap_4_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wp_bootstrap_4_scripts() {
-	wp_register_style('font-awesome-all','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
-	wp_enqueue_style('font-awesome-all');
-// 	wp_register_style('informatics-css',get_template_directory_uri().'/informatics.css');
-// 	wp_enqueue_style('informatics-css');
-	wp_register_script('vue-script','https://cdn.jsdelivr.net/npm/vue');
+// 	wp_register_style('font-awesome-all','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+// 	wp_enqueue_style('font-awesome-all');
+	wp_register_style('informatics-css',get_template_directory_uri().'/informatics.css');
+	wp_enqueue_style('informatics-css');
+	wp_register_script('vue-script',get_template_directory_uri().'/assets/js/vue.js');
 	wp_enqueue_script('vue-script');
 	wp_register_script('info-js','/wp-content/themes/informatics-template/assets/js/informatics.js');
 	wp_enqueue_script('info-js');
@@ -243,3 +243,17 @@ function wpbsearchform( $form ) {
 }
  
 add_shortcode('wpbsearch', 'wpbsearchform');
+
+
+function register_shop_menu(){
+	register_nav_menu('shop-menu',__('Shop Menu'));
+}
+add_action('init','register_shop_menu');
+
+function register_shop_sub_menu(){
+	register_nav_menu('shop-sub-menu',__('Shop Sub Menu'));
+}
+add_action('init','register_shop_sub_menu');
+
+
+remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );

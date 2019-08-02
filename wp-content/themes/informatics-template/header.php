@@ -17,14 +17,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
-	<link rel="stylesheet" href="/wp-content/themes/informatics-template/informatics.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet">
+<!-- 	<link rel="stylesheet" href="/wp-content/themes/informatics-template/informatics.css"> -->
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet"> -->
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet"> -->
 	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 	<!-- <script src="/wp-content/themes/informatics-template/assets/js/informatics.js"></script> -->
 	<!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
 	<?php wp_head(); ?>
+	<style>
+		@font-face {
+			font-family: 'Source Sans Pro';  
+			src: url('/wp-content/themes/informatics-template/assets/fonts/SourceSansPro-Light.ttf');  
+			font-weight: 300;  
+		}
+		@font-face {
+			font-family: 'Source Sans Pro';  
+			src: url('/wp-content/themes/informatics-template/assets/fonts/SourceSansPro-SemiBold.ttf');  
+			font-weight: 600;  
+		}
+		@font-face {
+			font-family: 'Open Sans';  
+			src: url('/wp-content/themes/informatics-template/assets/fonts/OpenSans-Regular.ttf');  
+			font-weight: normal;  
+		}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -109,7 +126,26 @@
 							</li>
 						</ul>
 					 </div>
+			
 				<?php
+				global $wp_query;
+				$idarray =[1826,1813,1816,1845,1849];
+			    echo $wp_query->post->ID;  
+			if(in_array($wp_query->post->ID,$idarray)){
+				wp_nav_menu( array(
+						'theme_location'  => 'shop-menu',
+						'menu_id'         => 'primary-menu',
+						'container'       => 'div',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'primary-menu-wrap',
+						'menu_class'      => 'navbar-nav ml-auto',
+			            'fallback_cb'     => '__return_false',
+			            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			            'depth'           => 2,
+			            'walker'          => new WP_bootstrap_4_walker_nav_menu()
+					) );
+					
+				}else{
 					wp_nav_menu( array(
 						'theme_location'  => 'menu-1',
 						'menu_id'         => 'primary-menu',
@@ -122,12 +158,14 @@
 			            'depth'           => 2,
 			            'walker'          => new WP_bootstrap_4_walker_nav_menu()
 					) );
+		     	}
 				?>
 				<div id="search-icon-wrap-2" class="pl-2"><i id="search-icon-2" class="fa fa-search"></i></div>
 			<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?></div><!-- /.container --><?php endif; ?>
 		</nav><!-- #site-navigation -->
 		<nav id="site-sub-navigation" class="main-navigation navbar navbar-expand-lg navbar-default">
 			<?php
+			if(!in_array($wp_query->post->ID,$idarray)){
 					wp_nav_menu( array(
 						'theme_location'  => 'menu-2',
 						'menu_id'         => 'secondary-menu',
@@ -140,6 +178,20 @@
 			            'depth'           => 2,
 			            'walker'          => new WP_bootstrap_4_walker_nav_menu()
 					) );
+			}else{
+				wp_nav_menu( array(
+						'theme_location'  => 'shop-sub-menu',
+						'menu_id'         => 'secondary-menu',
+						'container'       => 'div',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'secondary-menu-wrap',
+						'menu_class'      => 'navbar-nav ml-auto',
+			            'fallback_cb'     => '__return_false',
+			            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			            'depth'           => 2,
+			            'walker'          => new WP_bootstrap_4_walker_nav_menu()
+					) );
+			}
 				?>
 		<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?></div><!-- /.container --><?php endif; ?>
 		</nav>
@@ -171,5 +223,6 @@
 			</div>
 		</div>
 	</div>
+		
 	<?php } ?> 
 	
